@@ -1,4 +1,4 @@
-**100 Days of Code – Süleyman Gümüs**
+**100 Days of Code – Süleyman Gümüs** https://sugu4.github.io/100-days-of-code/Day01
 
 🎯 Ziel: Jeden Tag coden, lernen und dokumentieren.
 

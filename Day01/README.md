@@ -30,6 +30,5 @@ Das ist der Rahmen, den jede HTML-Seite braucht, damit der Browser weiß, wie er
 <h1>...</h1>            → Überschrift
 <p>...</p>              → Absatz
 <strong>...</strong>    → Text fett markieren
-...
-<br>
+
 ---

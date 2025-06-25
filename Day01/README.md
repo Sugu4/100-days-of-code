@@ -1,10 +1,10 @@
-**Tag 1 – HTML Grundlagen
+**Tag 1 – HTML Grundlagen**
 
 Datum: 25. Juni 2025  
 Dauer: 1 Stunde  
 Schwerpunkt: HTML-Struktur, Boilerplate, Semantik
 
-**Was habe ich gemacht?
+**Was habe ich gemacht?**
 
 - HTML-Dokument von Grund auf erstellt (ohne Editorhilfe)
 - Die grundlegende Struktur verstanden: `<!DOCTYPE>`, `<html>`, `<head>`, `<body>`
@@ -13,8 +13,7 @@ Schwerpunkt: HTML-Struktur, Boilerplate, Semantik
 **Dateien**
 - [`index.html`](./index.html) – Erste eigene HTML-Datei
 
-**Reflexion**
-<p>
+**Reflexion**<p>
 Ich habe gelernt, wie der Browser HTML interpretiert und warum saubere Struktur wichtig ist. Das `<head>`-Element ist oft übersehen, aber entscheidend für SEO und Darstellung.
 Das ist der Rahmen, den jede HTML-Seite braucht, damit der Browser weiß, wie er den Inhalt anzeigen soll.
 

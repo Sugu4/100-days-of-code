@@ -13,7 +13,7 @@ Schwerpunkt: HTML-Struktur, Boilerplate, Semantik
 **Dateien**
 - [`index.html`](./index.html) – Erste eigene HTML-Datei
 
-**Reflexion**
+**Reflexion**<p>
 Ich habe gelernt, wie der Browser HTML interpretiert und warum saubere Struktur wichtig ist. Das `<head>`-Element ist oft übersehen, aber entscheidend für SEO und Darstellung.
 Das ist der Rahmen, den jede HTML-Seite braucht, damit der Browser weiß, wie er den Inhalt anzeigen soll.
 
@@ -30,5 +30,6 @@ Das ist der Rahmen, den jede HTML-Seite braucht, damit der Browser weiß, wie er
 <h1>...</h1>            → Überschrift
 <p>...</p>              → Absatz
 <strong>...</strong>    → Text fett markieren
-
+...
+<br>
 ---

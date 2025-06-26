@@ -32,6 +32,8 @@ Thema: CSS-Styling, Farben, Schriftarten, Klassen
 
 **Bedeutung der wichtigsten Teile aus style.css**
 
+´´´
+| CSS-Code                        | Bedeutung                                                               |
 |---------------------------------|-------------------------------------------------------------------------|
 |body { ... }                     |→Stile, die für den gesamten Seitenkörper gelten (z.B. Hintergrundfarbe) |
 |font-family: Arial, sans-serif;  |→Definiert die Schriftart – zuerst Arial, sonst Ersatzschrift            |
@@ -42,5 +44,6 @@ Thema: CSS-Styling, Farben, Schriftarten, Klassen
 |padding: 10px;	                  |→Innenabstand – macht den Inhalt „atmen“                                 |
 |border-radius: 5px;	          |→Abgerundete Ecken bei Boxen                                             |
 |.info {font-style: italic;}	  |→Zweite eigene Klasse – zeigt, dass man gezielt Elemente gestalten kann  |
+´´´
 
 ---

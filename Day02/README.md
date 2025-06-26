@@ -25,8 +25,8 @@ Thema: CSS-Styling, Farben, Schriftarten, Klassen
 - CSS (Cascading Style Sheets) macht Webseiten nicht nur schöner, sondern auch lesbarer
 - Die `.class`-Syntax ist super flexibel für gezielte Gestaltung
 - Ich habe gelernt, dass man HTML möglichst "nackt" lässt und alles über CSS stylt
-- Die Einbindung entsteht durch <link rel="stylesheet" href="style.css">, verbindet die externe Datei style.css mit dem der HTML-Seite.
-- Wiederverwendbare Gestaltungsvorlagen, du kannst viele HTML-Elemente mit einer Klasse formatieren: <p class="info">...</p>.
+- Die Einbindung entsteht durch ```html<link rel="stylesheet" href="style.css">```, verbindet die externe Datei style.css mit dem der HTML-Seite.
+- Wiederverwendbare Gestaltungsvorlagen, du kannst viele HTML-Elemente mit einer Klasse formatieren: ´´´html<p class="info">...</p>´´´.
 
 ---
 

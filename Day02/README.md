@@ -17,7 +17,7 @@ Thema: CSS-Styling, Farben, Schriftarten, Klassen
 
 **Dateien**
 - [`index.html`](https://sugu4.github.io/100-days-of-code/Day02)– HTML-Gerüst mit Klassen
-- [`style.css`] – Enthält alle Styles
+- `style.css` – Enthält alle Styles
 
 ---
 

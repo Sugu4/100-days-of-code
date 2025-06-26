@@ -1,12 +1,12 @@
 body {
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212;
+    color: #8fb1e0;
     font-family: Arial, sans-serif;
     padding: 20px;
 }
 
 h1 {
-    color: #0066cc;
+    color: #1b02fc;
     text-align: center;
 }
 
@@ -18,12 +18,12 @@ p {
 
 /* Klassen */
 .highlight {
-    background-color: #e0f7fa;
-    padding: 10px;
+    background-color: #e0ae0caf;
+    padding: 6px;
     border-radius: 5px;
 }
 
 .info {
-    color: #555;
+    color: #c3edfda9;
     font-style: italic;
 }

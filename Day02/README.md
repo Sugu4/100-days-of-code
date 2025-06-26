@@ -33,15 +33,16 @@ Thema: CSS-Styling, Farben, Schriftarten, Klassen
 **Bedeutung der wichtigsten Teile aus style.css**
 
 ```
-<body { ... }>                       →Stile, die für den gesamten Seitenkörper gelten (z.B. Hintergrundfarbe, Schrift)
-<font-family: Arial, sans-serif;>	 →Definiert die Schriftart – zuerst Arial, sonst Ersatzschrift
-<color: #333;>	                     →Textfarbe – Hexadezimalwert für dunkles Grau
-<background-color: #f4f4f4;>	    →Hintergrundfarbe für die Seite
-<h1 { color: #0066cc; }>	        →Farbe und Stil des Haupttitels (z. B. blau und zentriert)
-<.highlight { ... }>	             →Eigene CSS-Klasse – nutzbar in HTML mit class="highlight"
-<padding: 10px;>	                 →Innenabstand – macht den Inhalt „atmen“
-<border-radius: 5px;>	             →Abgerundete Ecken bei Boxen
-<.info {font-style: italic;}>	     →Zweite eigene Klasse – zeigt, dass man gezielt Elemente gestalten kann
+|---------------------------------|-------------------------------------------------------------------------|
+|body { ... }                     |→Stile, die für den gesamten Seitenkörper gelten (z.B. Hintergrundfarbe) |
+|font-family: Arial, sans-serif;  |→Definiert die Schriftart – zuerst Arial, sonst Ersatzschrift            |
+|color: #333;	                  |→Textfarbe – Hexadezimalwert für dunkles Grau                            |
+|background-color: #f4f4f4;	 |→Hintergrundfarbe für die Seite                                          |
+|h1 { color: #0066cc; }	     |→Farbe und Stil des Haupttitels (z. B. blau und zentriert)               |
+|.highlight { ... }	              |→Eigene CSS-Klasse – nutzbar in HTML mit class="highlight"               |
+|padding: 10px;	                  |→Innenabstand – macht den Inhalt „atmen“                                 |
+|border-radius: 5px;	          |→Abgerundete Ecken bei Boxen                                             |
+|.info {font-style: italic;}	  |→Zweite eigene Klasse – zeigt, dass man gezielt Elemente gestalten kann  |
 ```
 
 ---

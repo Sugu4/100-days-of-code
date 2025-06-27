@@ -1,7 +1,7 @@
 **Tag 1 – HTML Grundlagen**
 
 Datum: 25. Juni 2025  
-Dauer: 2 Stunden  
+Dauer: 1 Stunden  
 Schwerpunkt: HTML-Struktur, Boilerplate, Semantik
 
 ---

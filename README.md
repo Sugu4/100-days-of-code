@@ -8,3 +8,4 @@
 |-----|------------------|-----------------|
 | 1   | HTML Grundlagen  | [Day01](./Day01)|
 | 2   | CSS Basics (Farben, Schrift, Klassen) | [Day02](./Day02) |
+| 3   | CSS Box-Modell & Layout-Abstände | [Day03](./Day03) |

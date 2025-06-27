@@ -1,7 +1,7 @@
 **Tag 3 – CSS Box-Modell**
 
 Datum: 27. Juni 2025  
-Dauer: 2 Stunde  
+Dauer: 1 Stunde  
 Thema: margin, padding, border, content verstehen & anwenden
 
 ---

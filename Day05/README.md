@@ -1,6 +1,6 @@
 **Tag 5 – Einstieg in JavaScript**
 
-Datum: 29. Juni 2025  
+Datum: 02. Junli 2025  
 Dauer: 1 Stunde  
 Thema: Grundlagen von JavaScript und DOM-Manipulation
 

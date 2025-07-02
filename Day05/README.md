@@ -12,6 +12,7 @@ Thema: Grundlagen von JavaScript und DOM-Manipulation
 - Eine Funktion geschrieben, die auf einen Klick reagiert
 - Mit `document.getElementById()` auf HTML-Elemente zugegriffen
 - Den Text im DOM live verändert (`innerText`)
+- Wie wichtig Dateinamen und Pfade sind, besonders lokal
 
 ---
 

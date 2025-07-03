@@ -5,5 +5,5 @@ function zeigeFeuerwerk() {
   // Reset nach 1 Sekunde, damit Animation erneut funktioniert
   setTimeout(() => {
     fw.classList.remove("active");
-  }, 2000);
+  }, 4000);
 }

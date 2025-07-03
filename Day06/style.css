@@ -38,13 +38,13 @@ button {
     opacity: 0,8;
   }
   100% {
-    transform: translate(-50%, -50%) scale(25);
+    transform: translate(-50%, -50%) scale(30);
     box-shadow:
-      0 0 8px red,
-      0 0 16px yellow,
-      0 0 24px cyan,
-      0 0 32px lime,
-      0 0 40px blue;
+      0 0 16px red,
+      0 0 32px yellow,
+      0 0 48px cyan,
+      0 0 64px lime,
+      0 0 80px blue;
     opacity: 0;
   }
 }

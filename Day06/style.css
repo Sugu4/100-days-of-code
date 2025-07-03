@@ -35,10 +35,10 @@ button {
   0% {
     transform: translate(-50%, -50%) scale(0);
     box-shadow: none;
-    opacity: 1;
+    opacity: 0,8;
   }
   100% {
-    transform: translate(-50%, -50%) scale(15);
+    transform: translate(-50%, -50%) scale(25);
     box-shadow:
       0 0 8px red,
       0 0 16px yellow,

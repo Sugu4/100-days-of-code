@@ -38,7 +38,7 @@ button {
     opacity: 0,8;
   }
   100% {
-    transform: translate(-50%, -50%) scale(30);
+    transform: translate(-50%, -50%) scale(28);
     box-shadow:
       0 0 16px red,
       0 0 32px yellow,

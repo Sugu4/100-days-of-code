@@ -12,3 +12,4 @@
 | 4   | Flexbox Basics - moderne Lyout-Technik | [Day04](./Day04/) |
 | 5   | JavaScript Grundlagen: Interaktivität & DOM | [Day05](./Day05/) |
 | 6   | Animation mit CSS & JavaScript | [Day06](./Day06/) |
+| 7   | Eingabefeld & Live-Ausgabe mit JavaScript | [Day07](./Day07/) |

@@ -1,4 +1,4 @@
-**Tag 8 – Einfache Rechen-App mit JavaScript**
+**Tag 8 – Einfache Rechenfunktion mit JavaScript**
 
 Datum: 7. Juli 2025  
 Dauer: 1 Stunde  

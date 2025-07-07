@@ -13,3 +13,4 @@
 | 5   | JavaScript Grundlagen: Interaktivität & DOM | [Day05](./Day05/) |
 | 6   | Animation mit CSS & JavaScript | [Day06](./Day06/) |
 | 7   | Eingabefeld & Live-Ausgabe mit JavaScript | [Day07](./Day07/) |
+| 8   | Einfache Rechenfunktion mit JavaScript | [Day08](./Day08/) |

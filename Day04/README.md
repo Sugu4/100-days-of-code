@@ -27,6 +27,13 @@ Thema: Flexbox – moderne Layout-Technik mit CSS
 
 ---
 
+**Vorschau**
+
+Live-Version auf GitHub Pages:  
+👉 https://sugu4.github.io/100-days-of-code/Day04/
+
+---
+
 **Dateien**
 
 - [`index.html`](https://sugu4.github.io/100-days-of-code/Day04) – Enthält die Struktur und die 3 Boxen

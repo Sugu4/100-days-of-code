@@ -26,6 +26,13 @@ Thema: Rechnen mit Eingabefeldern in JavaScript
 
 ---
 
+**Vorschau**
+
+Live-Version auf GitHub Pages:  
+👉 https://sugu4.github.io/100-days-of-code/Day08/
+
+---
+
 **Dateien**
 
 - [`index.html`](https://sugu4.github.io/100-days-of-code/Day08)

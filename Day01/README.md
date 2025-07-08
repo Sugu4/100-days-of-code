@@ -14,6 +14,13 @@ Schwerpunkt: HTML-Struktur, Boilerplate, Semantik
 
 ---
 
+**Vorschau**
+
+Live-Version auf GitHub Pages:  
+👉 https://sugu4.github.io/100-days-of-code/Day01/
+
+---
+
 **Dateien**
 - [`index.html`](https://sugu4.github.io/100-days-of-code/Day01) – Erste eigene HTML-Datei
 

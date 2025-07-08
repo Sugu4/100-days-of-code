@@ -27,6 +27,13 @@ Thema: margin, padding, border, content verstehen & anwenden
 
 ---
 
+**Vorschau**
+
+Live-Version auf GitHub Pages:  
+👉 https://sugu4.github.io/100-days-of-code/Day03/
+
+---
+
 **Dateien**
 
 - [`index.html`](https://sugu4.github.io/100-days-of-code/Day03)

@@ -25,6 +25,7 @@ Thema: Berechnungen mit Dropdown-Rechenart ( + − × ÷ )
 | `switch(operator)`          | Führt logische Entscheidung je nach Auswahl aus |
 | `isNaN()`                   | Verhindert ungültige Eingaben                  |
 | `innerText`                 | Gibt das Ergebnis im HTML aus                  |
+| `toLocaleString("de-DE")` | Formatiert große Zahlen mit Punkt als Tausendertrennung (z. B. 1000000 → 1.000.000) |
 
 ---
 

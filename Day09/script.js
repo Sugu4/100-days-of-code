@@ -32,5 +32,5 @@ function berechne() {
       return;
   }
 
-  ergebnis.innerText = `✅ Ergebnis: ${zahl1} ${operator} ${zahl2} = ${result}`;
+ergebnis.innerText = `✅ Ergebnis: ${zahl1.toLocaleString("de-DE")} ${operator} ${zahl2.toLocaleString("de-DE")} = ${result.toLocaleString("de-DE")}`;
 }

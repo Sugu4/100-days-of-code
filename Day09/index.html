@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tag 09 – Mini-Taschenrechner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧮 Mini-Taschenrechner 🧮</h1>
+    <p>Gib zwei Zahlen ein und wähle die Rechenart:</p>
+
+    <input type="number" id="zahl1" placeholder="Zahl 1">
+    <select id="operator">
+      <option value="+">+</option>
+      <option value="-">−</option>
+      <option value="*">×</option>
+      <option value="/">÷</option>
+    </select>
+    <input type="number" id="zahl2" placeholder="Zahl 2">
+
+    <button onclick="berechne()">Berechne</button>
+
+    <p id="ergebnis"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

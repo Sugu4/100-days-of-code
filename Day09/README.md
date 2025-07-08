@@ -33,14 +33,11 @@ Thema: Berechnungen mit Dropdown-Rechenart ( + − × ÷ )
 Live-Version auf GitHub Pages:  
 👉 https://sugu4.github.io/100-days-of-code/Day09/
 
-Quellcode auf GitHub:  
-👉 https://github.com/Sugu4/100-days-of-code/tree/main/Day09
-
 ---
 
 **Projektdateien**
 
-- `index.html`
+- [`index.html`](https://sugu4.github.io/100-days-of-code/Day09)
 - `style.css`
 - `script.js`
 

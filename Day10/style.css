@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#anzeige {
+  font-size: 60px;
+  margin: 20px 0;
+  font-weight: bold;
+  color: black;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #007acc;
+  color: white;
+}
+
+.positiv {
+  color: green;
+}
+
+.negativ {
+  color: red;
+}

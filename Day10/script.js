@@ -4,7 +4,7 @@ function updateAnzeige() {
   const anzeige = document.getElementById("anzeige");
   anzeige.innerText = count;
 
-  // Farbe anpassen
+  
   if (count > 0) {
     anzeige.className = "positiv";
   } else if (count < 0) {

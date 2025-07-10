@@ -16,3 +16,4 @@
 |   8 | Einfache Rechenfunktion mit JavaScript | [Day08](./Day08/) |
 |   9 | Mini-Taschenrechner mit JavaScript | [Day09](./Day09/) |
 |  10 | Interaktiver Zähler mit JavaScript | [Day10](./Day10/) |
+|  11 | Punkt-zu-Note-Rechner | [Day11](./Day11/) |

@@ -1,6 +1,6 @@
 **100 Days of Code – Süleyman Gümüs** 
 
-🎯 Ziel: Jeden Tag coden, lernen und dokumentieren.
+🎯 Ziel: Jeden Tag coden, lernen, dokumentieren und Lösungen bauen.
 
 **Fortschritt**
 

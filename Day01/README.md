@@ -1,7 +1,7 @@
 **Tag 1 – HTML Grundlagen**
 
 Datum: 25. Juni 2025  
-Dauer: 1 Stunden  
+Dauer: 2 Stunden  
 Schwerpunkt: HTML-Struktur, Boilerplate, Semantik
 
 ---
@@ -22,7 +22,7 @@ Live-Version auf GitHub Pages:
 ---
 
 **Dateien**
-- [`index.html`](https://sugu4.github.io/100-days-of-code/Day01) – Erste eigene HTML-Datei
+- [`index.html`](https://sugu4.github.io/100-days-of-code/Day01)
 
 ---
 
@@ -36,15 +36,22 @@ Das ist der Rahmen, den jede HTML-Seite braucht, damit der Browser weiß, wie er
 
 ```html
 <!DOCTYPE html>         → Sagt dem Browser: „Das ist eine moderne HTML5-Seite“
-<html lang="de">        → Start der Seite, hilft für SEO & Screenreader
+<html lang="de">        → Start des HTML-Dokuments.'lang="de"' legt die Sprache auf Deutsch fest, wichtig für SEO und Screenreader.
 <head>...</head>        → Unsichtbare Informationen: z. B. Titel, Zeichencodierung
 <meta charset="UTF-8">  → Zeichensatz – wichtig für Umlaute, Sonderzeichen
 <meta name="viewport">  → Responsives Design auf Smartphones
 <title>...</title>      → Der Seitentitel im Browser-Tab
 <body>...</body>        → Alles, was du im Browser sichtbar siehst
-<h1>...</h1>            → Überschrift
+<h1>...</h1>            → Hauptüberschrift der Seite
 <p>...</p>              → Absatz
-<strong>...</strong>    → Text fett markieren
+<strong>...</strong>    → Mittelpunkt Text wird Fett markiert
 ```
+
+---
+
+**SEO & Screenreader**
+
+- SEO-> Webseite für Google optimieren, mehr Besucher, bessere Platzierung bei Google.
+- Screenreader-> Programm zum Vorlesen von Webseiten, macht deine Webseite für alle zugänglich.
 
 ---

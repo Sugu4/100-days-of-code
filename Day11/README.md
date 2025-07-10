@@ -42,3 +42,6 @@ Live auf GitHub Pages:
 - `script.js`
 
 ---
+
+> Dieses Tool hilft Schülern, Umschülern und Lehrkräften, schnell und unkompliziert die passende Schulnote aus eingegebenen Punkten zu ermitteln – ergänzt durch eine verbale Bewertung.
+Es ist mobil nutzbar, direkt einsetzbar in Prüfungssituationen oder zur Selbstkontrolle.

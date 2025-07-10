@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag 11 - Punkt-zu-Note-Rechner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>📊 Punkt-zu-Note-Rechner</h1>
+        <p>Gib deine Punkte (0-100) ein:</p>
+
+        <input type="number" id="punkte" placeholder="z. B. 78" min="0" max="100">
+        <button onclick="berechneNote()">Berechne Note</button>
+
+        <div class="ausgabe">
+            <p id="note"></p>
+            <p id="bewertung"></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

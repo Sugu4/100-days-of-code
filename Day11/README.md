@@ -31,7 +31,7 @@ Thema: Punkte in Schulnoten umwandeln – mobil optimiert
 **Vorschau**
 
 Live auf GitHub Pages:  
-`https://sugu4.github.io/100-days-of-code/Day11/`
+👉 https://sugu4.github.io/100-days-of-code/Day11/
 
 ---
 

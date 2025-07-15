@@ -18,3 +18,4 @@
 |  10 | Interaktiver Zähler mit JavaScript | [Day10](./Day10/) |
 |  11 | Punkt-zu-Note-Rechner | [Day11](./Day11/) |
 |  12 | Mini-Quiz mit Feedback | [Day12](./Day12/) |
+|  13 | JavaScript-Quiz mit Auswertung | [Day13](./Day13/) |

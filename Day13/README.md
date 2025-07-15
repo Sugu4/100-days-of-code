@@ -44,7 +44,7 @@ Thema: JavaScript-Quiz mit Auswertung, Note und Neustart-Möglichkeit
 
 **Vorschau**
 
-Live-Demo auf GitHub Pages:
+Live-Demo auf GitHub Pages:  
 👉 https://sugu4.github.io/100-days-of-code/Day13/
 
 ---

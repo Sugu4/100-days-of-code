@@ -1,7 +1,7 @@
 **Tag 13 – JavaScript Quiz mit Bewertungssystem 🧠**
 
 Datum: 15. Juli 2025  
-Dauer: ca. 2 Stunden  
+Dauer: 2 Stunden  
 Thema: JavaScript-Quiz mit Auswertung, Note und Neustart-Möglichkeit
 
 ---

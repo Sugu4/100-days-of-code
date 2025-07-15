@@ -1,7 +1,7 @@
 **Tag 12 – Mini-Quiz mit Feedback**
 
 Datum: 14. Juli 2025  
-Dauer: ca. 1 Stunde  
+Dauer: 1 Stunde  
 Thema: Interaktives Quiz mit JavaScript
 
 ---

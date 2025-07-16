@@ -51,5 +51,3 @@ Live-Demo auf GitHub Pages:
 - ✅ Ein digitaler Motivationskalender  
 - ✅ Ein Markdown-Live-Editor  
 - ✅ Ein Quiz über deine Hobbys
-
-Du kannst das Array jederzeit erweitern oder an

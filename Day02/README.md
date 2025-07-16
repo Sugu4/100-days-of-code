@@ -1,7 +1,7 @@
 **Tag 2 – CSS Grundlagen**
 
 Datum: 26. Juni 2025  
-Dauer: 1 Stunden  
+Dauer: 1 Stunde  
 Thema: CSS-Styling, Farben, Schriftarten, Klassen
 
 ---

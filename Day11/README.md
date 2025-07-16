@@ -1,7 +1,7 @@
 **Tag 11 – Punkt-zu-Note-Rechner**
 
 Datum: 5. Juli 2025  
-Dauer: 2 Stunde  
+Dauer: 2 Stunden  
 Thema: Punkte in Schulnoten umwandeln – mobil optimiert
 
 ---

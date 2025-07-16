@@ -1,7 +1,7 @@
 **Tag 14 – JavaScript-Ideen-Generator 🎯**
 
-Datum: 14. Juli 2025
-Dauer: 2 Stunden 
+Datum: 14. Juli 2025  
+Dauer: 2 Stunden  
 Thema: Erstellung eines interaktiven Zufallsgenerators, der bei Klick neue Ideen anzeigt.
 
 ---

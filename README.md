@@ -20,3 +20,4 @@
 |  12 | Mini-Quiz mit Feedback | [Day12](./Day12/) |
 |  13 | JavaScript-Quiz mit Auswertung | [Day13](./Day13/) |
 |  14 | Erstellung eines interaktiven Zufallsgenerators | [Day14](./Day14/) |
+|  15 | Motivationsspruch-Generator und Begrüßungsanzeige mit JavaScript | [Day15](./Day15/) |

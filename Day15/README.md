@@ -49,4 +49,5 @@ Live-Demo auf GitHub Pages:
 
 - Guten Morgen (zwischen 5–11 Uhr)  
 - Guten Tag (zwischen 11–17 Uhr)  
-- Guten Abend (ab 17 Uhr)  
+- Guten Abend (zwischen 17-22 Uhr)  
+- Gute Nacht (ab 22 Uhr)  

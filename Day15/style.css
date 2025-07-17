@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  color: white;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+}
+
+#spruch {
+  font-size: 1.4rem;
+  margin: 20px 0;
+}
+
+#gruss {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #333;
+}

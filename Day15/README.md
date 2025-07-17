@@ -1,6 +1,6 @@
 **Tag 15 – Motivationsspruch-Generator und Begrüßungsanzeige mit JavaScript**
 
-Datum: 15. Juli 2025  
+Datum: 17. Juli 2025  
 Dauer: 2 Stunden  
 Thema: Motivationsspruch-Generator und Dynamische Begrüßung auf Basis der aktuellen Tageszeit.
 

@@ -4,7 +4,21 @@ const zitate = [
   "Jeder Tag ist eine neue Chance.",
   "Scheitern ist ein Teil des Erfolgs.",
   "Denke groß. Handle jetzt.",
-  "Veränderung beginnt bei dir."
+  "Veränderung beginnt bei dir.",
+  "Träume nicht dein Leben, lebe deinen Traum.",
+  "Stillstand ist Rückschritt.",
+  "Mut steht am Anfang des Handelns, Glück am Ende.",
+  "Kleine Schritte führen zum Ziel.",
+  "Wer kämpft, kann verlieren. Wer nicht kämpft, hat schon verloren.",
+  "Du bist zu mehr fähig, als du glaubst.",
+  "Lernen ist wie Rudern gegen den Strom – wer aufhört, treibt zurück.",
+  "Fehler sind der Beweis, dass du es versuchst.",
+  "Tu heute etwas, worauf du morgen stolz sein kannst.",
+  "Disziplin schlägt Motivation.",
+  "Gib nicht auf. Fang einfach nochmal an.",
+  "Nicht perfekt sein – sondern echt.",
+  "Großartige Dinge passieren außerhalb der Komfortzone.",
+  "Die beste Zeit, etwas zu starten, ist jetzt."
 ];
 
 function aktuellesDatum() {

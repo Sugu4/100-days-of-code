@@ -48,5 +48,5 @@ Live-Demo auf GitHub Pages:
 **Beispielhafte Begrüßungen**
 
 - Guten Morgen (zwischen 5–11 Uhr)  
-- Guten Tag (zwischen 12–17 Uhr)  
-- Guten Abend (ab 18 Uhr)  
+- Guten Tag (zwischen 11–17 Uhr)  
+- Guten Abend (ab 17 Uhr)  

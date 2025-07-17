@@ -51,7 +51,7 @@ function zeigeBegrüßung() {
     emoji = "🌙";
   }
 
-  document.getElementById("gruss").innerText = `${emoji} ${text}, Süleyman!`;
+  document.getElementById("gruss").innerText = `${emoji}${text}, Besucher!`;
 }
 
 // Start-Setup

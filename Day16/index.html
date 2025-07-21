@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tag 16 – Notizblock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝Mein Notizblock</h1>
+    <textarea id="notiz" placeholder="Schreibe deine Notiz hier..."></textarea>
+
+    <div class="buttons">
+      <button onclick="speichern()">💾 Speichern</button>
+      <button onclick="loeschen()">🗑️ Löschen</button>
+      <button onclick="umschalten()">🌓 Dark Mode</button>
+    </div>
+
+    <p class="info">Deine Notiz bleibt auch nach dem Schließen erhalten (localStorage).</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

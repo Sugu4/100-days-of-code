@@ -1,11 +1,9 @@
-// Notiz aus localStorage laden
 window.onload = function () {
   const gespeicherteNotiz = localStorage.getItem("meineNotiz");
   if (gespeicherteNotiz) {
     document.getElementById("notiz").value = gespeicherteNotiz;
   }
 
-  // Dark Mode Zustand prüfen
   if (localStorage.getItem("darkMode") === "true") {
     document.body.classList.add("dark");
   }

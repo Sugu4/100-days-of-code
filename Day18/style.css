@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #1e1e1e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #2a2a2a;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+input[type="number"],
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.optionen {
+    text-align: left;
+    margin: 10px 0;
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background: #007acc;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005a99;
+}

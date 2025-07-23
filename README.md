@@ -23,3 +23,4 @@
 |  15 | Motivationsspruch-Generator und Begrüßungsanzeige mit JavaScript | [Day15](./Day15/) |
 |  16 | Notizblock mit Dark Mode | [Day16](./Day16/) |
 |  17 | Live-Zeichenzähler mit Farbanzeige | [Day17](./Day17/) |
+|  18 | Anpassbarer Passwort-Genarator | [Day18](./Day18/) |

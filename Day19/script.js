@@ -16,19 +16,29 @@ let rueckseiteAktiv = false;
 
 function dreheKarte() {
   const karte = document.getElementById("karte");
-  karte.classList.toggle("gedreht");
-  ruekseiteAktiv = !rueckseiteAktiv;
+
+  
   if (!rueckseiteAktiv) {
     setTimeout(() => {
-        neuerText();
+      aktualisiereSpruch();
+    }, 800);
+  } else {
+    setTimeout(() => {
+      aktualisiereEmoji();
     }, 800);
   }
+
+  karte.classList.toggle("gedreht");
+
+  rueckseiteAktiv = !rueckseiteAktiv;
 }
 
-function neuerText() {
+function aktualisiereEmoji() {
   const emoji = emojis[Math.floor(Math.random() * emojis.length)];
-  const spruch = sprueche[Math.floor(Math.random() * sprueche.length)];
-
   document.getElementById("emoji").innerText = emoji;
+}
+
+function aktualisiereSpruch() {
+  const spruch = sprueche[Math.floor(Math.random() * sprueche.length)];
   document.getElementById("spruch").innerText = spruch;
 }

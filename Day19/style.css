@@ -23,7 +23,7 @@ body {
   cursor: pointer;
 }
 
-.card:hover {
+.card.gedreht {
   transform: rotateY(180deg);
 }
 

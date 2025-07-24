@@ -12,10 +12,17 @@ const sprueche = [
   "Keep going 💪"
 ];
 
+let rueckseiteAktiv = false;
+
 function dreheKarte() {
   const karte = document.getElementById("karte");
   karte.classList.toggle("gedreht");
-  neuerText();
+  ruekseiteAktiv = !rueckseiteAktiv;
+  if (!rueckseiteAktiv) {
+    setTimeout(() => {
+        neuerText();
+    }, 800);
+  }
 }
 
 function neuerText() {

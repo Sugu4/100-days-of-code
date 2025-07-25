@@ -1,5 +1,3 @@
-![Progress](https://img.shields.io/badge/Progress-20%2F100-green)
-
 # 100 Days of Code – Süleyman Gümüs
 
 **Ziel:** Jeden Tag coden, lernen, dokumentieren und praxisnahe Mini-Projekte entwickeln.

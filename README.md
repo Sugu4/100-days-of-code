@@ -69,3 +69,8 @@ Gerne als GitHub-Issue oder über das Kontaktformular auf meiner Website:
 👉 [https://sugu4.github.io/guemues/](https://sugu4.github.io/guemues/)
 
 ---
+
+## Lizenz
+
+Dieses Projekt steht unter der [MIT-Lizenz](./LICENSE).  
+Nutzung & Anpassung für Lernzwecke ausdrücklich erlaubt.

@@ -49,3 +49,13 @@ h1 {
   margin-top: 20px;
   color: #ccc;
 }
+
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.1); color: #ff4b4b; }
+  100% { transform: scale(1); }
+}
+
+.zeit-animiert {
+  animation: pulse 0.8s ease-in-out 3;
+}

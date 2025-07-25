@@ -2,7 +2,7 @@
 
 **Ziel:** Jeden Tag coden, lernen, dokumentieren und praxisnahe Mini-Projekte entwickeln.
 
-Dieses Repository dokumentiert meine persönliche 100-Tage-Coding-Challenge – mit HTML, CSS, JavaScript und GitHub Pages.  
+Dieses Repository dokumentiert meine persönliche 100-Tage-Coding-Challenge – mit HTML, CSS, JavaScript, Python(ab Tag 30) und GitHub Pages.  
 Jeder Tag enthält ein kleines, aber lehrreiches Projekt, das online getestet und als Lernvorlage verwendet werden kann.
 
 ---

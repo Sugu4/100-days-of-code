@@ -1,6 +1,20 @@
-**100 Days of Code – Süleyman Gümüs** 
+![Progress](https://img.shields.io/badge/Progress-20%2F100-green)
 
-🎯 Ziel: Jeden Tag coden, lernen, dokumentieren und Lösungen bauen.
+# 100 Days of Code – Süleyman Gümüs
+
+**Ziel:** Jeden Tag coden, lernen, dokumentieren und praxisnahe Mini-Projekte entwickeln.
+
+Dieses Repository dokumentiert meine persönliche 100-Tage-Coding-Challenge – mit HTML, CSS, JavaScript und GitHub Pages.  
+Jeder Tag enthält ein kleines, aber lehrreiches Projekt, das online getestet und als Lernvorlage verwendet werden kann.
+
+---
+
+## Live-Demo
+
+👉 **Alle Projekte direkt im Browser ansehen:**  
+**https://sugu4.github.io/100-days-of-code/**
+
+---
 
 **Fortschritt**
 
@@ -26,3 +40,32 @@
 |  18 | Anpassbarer Passwort-Genarator | [Day18](./Day18/) |
 |  19 | 3D Flip Card mit Glanzeffekt | [Day19](./Day19/) |
 |  20 | Pomodoro-Timer | [Day20](./Day20/) |
+
+---
+
+## Zielgruppe
+
+Dieses Projekt richtet sich an:
+
+- 👩‍💻 Entwickler:innen auf Lernreise
+- 📚 Schüler:innen, Umschüler & Quereinsteiger
+- 🔍 Recruiter, die meine Entwicklung verfolgen wollen
+- 🚀 Alle, die inspirierende Mini-Projekte suchen
+
+---
+
+## Nächste Schritte
+
+- Tägliche Updates bis Tag 100
+- Bald größere Projekte (ab Tag 25)
+- Mehr Fokus auf mobile Nutzbarkeit
+- Python-Projekte nach Tag 30 geplant
+
+---
+
+## Feedback oder Fragen?
+
+Gerne als GitHub-Issue oder über das Kontaktformular auf meiner Website:  
+👉 [https://sugu4.github.io/guemues/](https://sugu4.github.io/guemues/)
+
+---

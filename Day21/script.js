@@ -1,5 +1,3 @@
-const { start } = require("repl");
-
 let fokusZeit= 25*60;
 let pauseZeit= 5*60;
 let aktuelleZeit= fokusZeit;
@@ -16,7 +14,7 @@ function startTimer() {
         updateAnzeige();
 
         if (aktuelleZeit <= 0) {
-            document.getElementById("alarm").onplay();
+            document.getElementById("alarm").play();
             wechselModus();
         }
     }, 1000);
@@ -25,7 +23,7 @@ function startTimer() {
 function updateAnzeige () {
     const minuten= Math.floor(aktuelleZeit / 60).toString().padStart(2, '0');
     const sekunden= (aktuelleZeit % 60).toString().padStart(2, '0');
-    document.getElementById("zeit").innerText= '${minuten}:${sekunden}';
+    document.getElementById("zeit").innerText= `${minuten}:${sekunden}`;
 }
 
 function wechselModus() {
@@ -40,7 +38,7 @@ function wechselModus() {
 
     if (istFokus) {
         zyklus++;
-        document.getElementById("zyklusInfo").innerText= 'Zyklus: ${zyklus}';
+        document.getElementById("zyklusInfo").innerText= `Zyklus: ${zyklus}`;
     }
 
     startTimer();

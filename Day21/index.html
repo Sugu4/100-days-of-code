@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tag 21 – Pomodoro Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍅Pomodoro Pro</h1>
+    <div class="timer">
+      <div id="status">Fokus</div>
+      <div id="zeit">25:00</div>
+    </div>
+    <div class="controls">
+      <button onclick="startTimer()">▶️Start</button>
+      <button onclick="resetTimer()">🔁Reset</button>
+    </div>
+    <p id="zyklusInfo">Zyklus: 1</p>
+  </div>
+
+  <audio id="alarm" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

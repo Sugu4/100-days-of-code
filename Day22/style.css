@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #1a2a6c, #b21f1f, #fdbb2d);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.kreis {
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  margin: 30px auto;
+  transform: scale(1);
+}
+
+
+@keyframes atmen {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.8); }
+  100% { transform: scale(1); }
+}
+
+#anleitung {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+button {
+  margin: 10px;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ffffff40;
+  color: white;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ffffff70;
+}

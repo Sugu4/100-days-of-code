@@ -14,7 +14,7 @@ let timer = null;
 let countdownTimer = null;
 
 function startMeditation() {
-  stopMeditation(); // Immer von vorne beginnen
+  stopMeditation();
   index = 0;
   audio.currentTime = 0;
   audio.play();

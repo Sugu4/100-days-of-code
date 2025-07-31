@@ -1,7 +1,7 @@
 **Tag 24 – Binär- und Dezimal-Umrechner 🧮**
 
 Datum: 31. Juli 2025  
-Dauer: 1 Stunde  
+Dauer: 1,5 Stunden  
 Thema: Live-Umrechner zwischen Binär- und Dezimalzahlen mit Validierung
 
 ---

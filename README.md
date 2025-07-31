@@ -41,6 +41,7 @@ Jeder Tag enthält ein kleines, aber lehrreiches Projekt, das online getestet un
 |  21 | Pomodoro-Timer mit Alarm & Zyklen-Tracking | [Day21](./Day21/) |
 |  22 | Interaktive Atem-Übung mit Animation & Hintergrundmusik | [Day22](./Day22/) |
 |  23 | Interaktive Weltkarte mit Marker-Funktionalität | [Day23](./Day23/) |
+|  24 | Binär- und Dezimal-Umrechner | [Day24](./Day24/) |
 
 ---
 

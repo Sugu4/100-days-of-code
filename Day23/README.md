@@ -1,6 +1,6 @@
 **Tag 23 – Interaktive Weltkarte 🌍🗺️**
 
-Datum: 31. Juli 2025  
+Datum: 30. Juli 2025  
 Dauer: 2 Stunden  
 Thema: Eine dynamische Weltkarte mit Marker-Funktionalität – nutzbar auf Desktop & Smartphone.
 

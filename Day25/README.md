@@ -1,7 +1,7 @@
 **Tag 25 – JSON Validator & Formatter 🧰**  
 
-Datum: 15.08.2025 
-Dauer: 2,5 Stunden 
+Datum: 15.08.2025  
+Dauer: 2,5 Stunden  
 Thema: JSON prüfen, hübsch formatieren, minifizieren – alles lokal im Browser.
 
 ---

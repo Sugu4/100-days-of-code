@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tag 25 – JSON Validator & Formatter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>🧰 JSON Validator & Formatter</h1>
+      <button id="themeToggle" aria-label="Dark Mode umschalten">🌓</button>
+    </header>
+
+    <div class="panes">
+      <section class="pane">
+        <label for="input">Eingabe (JSON)</label>
+        <textarea id="input" placeholder='{"name":"Ada","skills":["math","code"]}'></textarea>
+        <div class="actions">
+          <button id="btnValidate">✅ Validieren</button>
+          <button id="btnFormat">✨ Formatieren</button>
+          <button id="btnMinify">📦 Minifizieren</button>
+          <button id="btnExample">📋 Beispiel laden</button>
+          <label class="fileBtn">
+            📂 Datei laden
+            <input id="fileInput" type="file" accept=".json,application/json" hidden>
+          </label>
+        </div>
+      </section>
+
+      <section class="pane">
+        <label for="output">Ausgabe</label>
+        <textarea id="output" placeholder="Formatiertes oder minifiziertes JSON erscheint hier …"></textarea>
+        <div class="actions">
+          <button id="btnCopy">📋 Kopieren</button>
+          <button id="btnDownload">💾 Download (.json)</button>
+          <button id="btnClear">🧹 Leeren</button>
+        </div>
+      </section>
+    </div>
+
+    <p id="status" role="status" aria-live="polite">Bereit.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

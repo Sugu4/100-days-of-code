@@ -42,6 +42,7 @@ Jeder Tag enthält ein kleines, aber lehrreiches Projekt, das online getestet un
 |  22 | Interaktive Atem-Übung mit Animation & Hintergrundmusik | [Day22](./Day22/) |
 |  23 | Interaktive Weltkarte mit Marker-Funktionalität | [Day23](./Day23/) |
 |  24 | Binär- und Dezimal-Umrechner | [Day24](./Day24/) |
+|  25 | JSON Validator & Formatter | [Day25](./Day25/) |
 
 ---
 

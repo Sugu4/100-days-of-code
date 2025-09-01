@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kontaktformular – Tag 28</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>📨 Kontaktformular</h1>
+      <p class="subtitle">Live-Validierung, barrierearm & mit Entwurfs-Speicherung.</p>
+    </header>
+
+    <form id="contactForm" novalidate>
+      <div class="row">
+        <div class="field">
+          <label for="name">Name*</label>
+          <input id="name" name="name" type="text" required minlength="2" maxlength="50" placeholder="Max Mustermann">
+          <small id="nameHelp" class="help" aria-live="polite"></small>
+        </div>
+
+        <div class="field">
+          <label for="email">E-Mail*</label>
+          <input id="email" name="email" type="email" required inputmode="email" autocomplete="email" placeholder="max@mail.de">
+          <small id="emailHelp" class="help" aria-live="polite"></small>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="phone">Telefon (optional)</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="+49 151 12345678">
+          <small id="phoneHelp" class="help" aria-live="polite"></small>
+        </div>
+
+        <div class="field">
+          <label for="subject">Betreff*</label>
+          <input id="subject" name="subject" type="text" required minlength="3" maxlength="80" placeholder="Kurzer Betreff">
+          <small id="subjectHelp" class="help" aria-live="polite"></small>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="message">Nachricht* <span class="muted">(min. 10 Zeichen)</span></label>
+        <textarea id="message" name="message" required minlength="10" maxlength="1000" rows="6" placeholder="Deine Nachricht …"></textarea>
+        <div class="flex-between">
+          <small id="messageHelp" class="help" aria-live="polite"></small>
+          <small id="charCount" class="muted">0 / 1000</small>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="submitBtn" type="submit" disabled>Senden</button>
+        <button id="resetBtn" type="button" class="ghost">Zurücksetzen</button>
+        <button id="clearDraftBtn" type="button" class="ghost">Entwurf löschen</button>
+      </div>
+
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+    </form>
+
+    <section id="result" class="result hidden" aria-hidden="true">
+      <h2>✅ Anfrage gesendet</h2>
+      <pre id="resultJson"></pre>
+    </section>
+
+    <footer class="footer">
+      <small>Tag 28 – Client-Side Validation, Draft-Storage & Submit-Simulation</small>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

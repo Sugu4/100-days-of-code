@@ -13,9 +13,16 @@
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
-  margin:0; background:linear-gradient(180deg,var(--bg),#eef2ff 100%);
-  color:#0f172a; display:flex; align-items:center; justify-content:center; padding:24px;
-  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  margin:0; 
+  background:linear-gradient(180deg,var(--bg),#eef2ff 100%);
+  color:#0f172a; 
+  display:flex; 
+  align-items:flex-start; 
+  justify-content:center; 
+  padding:40px 24px;
+  overflow: auto;
+  -webkit-font-smoothing:antialiased; 
+  -moz-osx-font-smoothing:grayscale;
 }
 
 .container{width:100%;max-width:860px}

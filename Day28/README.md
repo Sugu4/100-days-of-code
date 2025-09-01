@@ -1,7 +1,7 @@
 **Tag 28 – Kontaktformular mit Live‑Validierung**
 
-Datum: 01. Sep 2025
-Dauer: 3 Stunden
+Datum: 01. Sep 2025  
+Dauer: 3 Stunden  
 Thema: Formularvalidierung (HTML5 + JavaScript), barrierearme Fehlermeldungen, Entwurfs‑Speicherung (localStorage)
 
 ---

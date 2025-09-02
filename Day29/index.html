@@ -16,12 +16,12 @@
     <nav class="nav" aria-label="Hauptnavigation">
       <a class="logo" href="#">HealthyLife</a>
 
-      <!-- Burger Button -->
+
       <button class="nav-toggle" aria-controls="nav-list" aria-expanded="false" aria-label="Menü öffnen">
         ☰
       </button>
 
-      <!-- Navigation -->
+
       <ul class="nav-list" id="nav-list">
         <li><a href="#features">Features</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
@@ -43,18 +43,48 @@
     <section id="features" class="features">
       <h2>Unsere Features</h2>
       <div class="grid">
-        <article>
+        <article data-target="progress" tabindex="0" role="button" aria-pressed="false">
           <h3>📊 Fortschritts-Tracking</h3>
           <p>Verfolge deine Gesundheit und Fitness mit übersichtlichen Diagrammen.</p>
         </article>
-        <article>
+        <article data-target="tips" tabindex="0" role="button" aria-pressed="false">
           <h3>🥗 Ernährungstipps</h3>
           <p>Individuelle Empfehlungen für eine ausgewogene Ernährung.</p>
         </article>
-        <article>
+        <article data-target="meditation" tabindex="0" role="button" aria-pressed="false">
           <h3>🧘 Stress-Management</h3>
           <p>Geführte Meditationen und Achtsamkeitsübungen für mehr Balance.</p>
         </article>
+      </div>
+
+      <!-- Interaktive Sektionen -->
+      <div class="feature-section hidden" id="tips">
+        <h3>🌱 Tägliche Tipps</h3>
+        <ul>
+          <li>Nehmen Sie täglich, drei Protionen Gemüse und zwei Portionen Obst zu sich.</li>
+          <li>Trinke ein Glas Wasser vor dem Frühstück.</li>
+          <li>Erbsen, Bohnen, Linsen und Nüsse sind eine gute Quelle für Proteine.</li>
+        </ul>
+      </div>
+
+      <div class="feature-section hidden" id="meditation">
+        <h3>🧘 Kurze Meditation</h3>
+        <p>Lehne dich zurück, schließe die Augen und höre beruhigende Musik.</p>
+        <audio controls aria-label="Beruhigende Meditation">
+          <source src="audio/meine_beruhigende_musik.mp3" type="audio/mpeg">
+          Dein Browser unterstützt das Abspielen von Audio nicht.
+        </audio>
+      </div>
+
+      <div class="feature-section hidden" id="progress">
+        <h3>📊 Dein Fortschritt</h3>
+        <label for="progressInput">Heutige Meditation (Minuten)</label>
+        <input type="number" id="progressInput" min="0" max="60" value="0" aria-describedby="progressHelp">
+        <button onclick="updateProgress()">Speichern</button>
+        <p id="progressHelp" class="muted">Maximal 60 Minuten pro Tag</p>
+        <div class="bar-container" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div id="bar" class="bar"></div>
+        </div>
       </div>
     </section>
 

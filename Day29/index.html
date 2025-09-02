@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthyLife App – Deine Gesundheits-App</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Skip-Link für Screenreader -->
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <!-- Header mit Navigation -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a class="logo" href="#">HealthyLife</a>
+
+      <!-- Burger Button -->
+      <button class="nav-toggle" aria-controls="nav-list" aria-expanded="false" aria-label="Menü öffnen">
+        ☰
+      </button>
+
+      <!-- Navigation -->
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#download">Download</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hauptinhalt -->
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Gesünder leben mit HealthyLife</h1>
+      <p class="subtitle">Die App, die dich täglich motiviert und unterstützt.</p>
+      <a class="btn" href="#download">Jetzt kostenlos testen</a>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features">
+      <h2>Unsere Features</h2>
+      <div class="grid">
+        <article>
+          <h3>📊 Fortschritts-Tracking</h3>
+          <p>Verfolge deine Gesundheit und Fitness mit übersichtlichen Diagrammen.</p>
+        </article>
+        <article>
+          <h3>🥗 Ernährungstipps</h3>
+          <p>Individuelle Empfehlungen für eine ausgewogene Ernährung.</p>
+        </article>
+        <article>
+          <h3>🧘 Stress-Management</h3>
+          <p>Geführte Meditationen und Achtsamkeitsübungen für mehr Balance.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Kontaktformular -->
+    <section id="kontakt" class="contact">
+      <h2>Kontaktiere uns</h2>
+      <form aria-label="Kontaktformular">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required aria-required="true">
+
+        <label for="email">E-Mail</label>
+        <input id="email" name="email" type="email" required aria-required="true">
+
+        <label for="message">Nachricht</label>
+        <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+
+        <button type="submit">Absenden</button>
+      </form>
+    </section>
+
+    <!-- Download -->
+    <section id="download" class="download">
+      <h2>Hol dir die App</h2>
+      <p>Verfügbar für iOS und Android.</p>
+      <div class="actions">
+        <a href="#" class="btn">App Store</a>
+        <a href="#" class="btn">Google Play</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 HealthyLife. Alle Rechte vorbehalten.</p>
+  </footer>
+</body>
+</html>

@@ -75,12 +75,12 @@ Sie eignet sich als **Übungsprojekt**, Demo oder Prototyp für echte Apps.
 
 **Erweiterte Features & Ideen**
 
-- Tipps & Meditationen 🧘‍♂️  
+- Tipps & Meditationen 🧘‍♂️
 * Kurze Texte mit Entspannungsübungen oder Motivationssätzen  
-- Fortschrittsanzeige 📊  
+- Fortschrittsanzeige 📊
 * Nutzer können kleine Schritte markieren („Heute 5 Minuten Meditation gemacht“)  
 * Fortschritt wird z. B. per Balken oder Prozentzahl angezeigt  
-- Barrierefreiheit für Sehbehinderte ♿  
+- Barrierefreiheit für Sehbehinderte ♿
 * Alle Buttons & Formulare haben ARIA-Labels und korrekte HTML-Struktur  
 * Texte können von Screenreadern vorgelesen werden  
 * Audio-Features helfen zusätzlich

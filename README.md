@@ -51,7 +51,7 @@ Viel Spaß beim Stöbern 😊
 |  26 | ToDo-App mit LocalStorage | [Day26](./Day26/) |
 |  27 | Wetter-App mit OpenWeatherMap | [Day27](./Day27/) |
 |  28 | Kontaktformular mit Live‑Validierung | [Day28](./Day28/) |
-|  29 | Gesundheits-App mit interaktiven Features | [Day28](./Day28/) |
+|  29 | Gesundheits-App mit interaktiven Features | [Day29](./Day29/) |
 
 
 ---

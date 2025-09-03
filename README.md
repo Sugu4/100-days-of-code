@@ -7,7 +7,7 @@ Zur Unterstützung nutze ich KI-Tools, um schneller zu lernen. Dabei ist es mir 
 
 Jeder Tag enthält ein kleines, aber lehrreiches Projekt, das online getestet werden kann und gleichzeitig als Lernvorlage dient.  
 
-Viel Spaß beim Stöbern 😊
+Viel Spaß beim Stöbern und Lernen! 😊
 
 
 ---
@@ -70,9 +70,9 @@ Dieses Projekt richtet sich an:
 ## Nächste Schritte
 
 - Tägliche Updates bis Tag 100
-- Bald größere Projekte (ab Tag 25)
 - Mehr Fokus auf mobile Nutzbarkeit
 - Python-Projekte nach Tag 30 geplant
+- Erste Schritte mit Datenanalyse & Automatisierung
 
 ---
 

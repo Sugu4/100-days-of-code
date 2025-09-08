@@ -52,6 +52,7 @@ Viel Spaß beim Stöbern und Lernen! 😊
 |  27 | Wetter-App mit OpenWeatherMap | [Day27](./Day27/) |
 |  28 | Kontaktformular mit Live‑Validierung | [Day28](./Day28/) |
 |  29 | Gesundheits-App mit interaktiven Features | [Day29](./Day29/) |
+|  30 | Warenkorb-Analyse | [Day30](./Day30/) |
 
 
 ---

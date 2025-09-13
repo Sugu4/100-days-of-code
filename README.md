@@ -53,6 +53,8 @@ Viel Spaß beim Stöbern und Lernen! 😊
 |  28 | Kontaktformular mit Live‑Validierung | [Day28](./Day28/) |
 |  29 | Gesundheits-App mit interaktiven Features | [Day29](./Day29/) |
 |  30 | Warenkorb-Analyse | [Day30](./Day30/) |
+|  31 | Warenkorb Statistik & Trends | [Day31](./Day31/) |
+
 
 
 ---

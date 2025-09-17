@@ -9,7 +9,6 @@ Jeder Tag enthält ein kleines, aber lehrreiches Projekt, das online getestet we
 
 Viel Spaß beim Stöbern und Lernen! 😊
 
-
 ---
 
 ## Live-Demo
@@ -54,7 +53,6 @@ Viel Spaß beim Stöbern und Lernen! 😊
 |  29 | Gesundheits-App mit interaktiven Features | [Day29](./Day29/) |
 |  30 | Warenkorb-Analyse | [Day30](./Day30/) |
 |  31 | Warenkorb Statistik & Trends | [Day31](./Day31/) |
-
 
 
 ---

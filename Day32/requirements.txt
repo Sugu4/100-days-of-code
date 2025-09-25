@@ -1,4 +1,5 @@
-pandas
-matplotlib
-seaborn
-yfinance
+pandas # Für Datenmanipulation und -analyse
+matplotlib # Für Datenvisualisierung
+seaborn # Für erweiterte Datenvisualisierung
+
+requests # Für API-Anfragen

@@ -53,7 +53,7 @@ Viel Spaß beim Stöbern und Lernen! 😊
 |  29 | Gesundheits-App mit interaktiven Features | [Day29](./Day29/) |
 |  30 | Warenkorb-Analyse | [Day30](./Day30/) |
 |  31 | Warenkorb Statistik & Trends | [Day31](./Day31/) |
-
+|  32 | XAU/USD Analyse (Goldpreis) | [Day32](./Day32/) |
 
 ---
 

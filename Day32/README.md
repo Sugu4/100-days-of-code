@@ -11,7 +11,7 @@ Optional kann die Analyse aber mit einer echten API (z. B. Metals-API, Yahoo Fin
 ```
 day32/
 │── data/
-│   └── xauusd_mock.csv      # Beispiel-Daten (6 Monate Goldpreise)
+│   └── xauusd_mock.csv      # Beispiel-Daten
 │── output/                  # Diagramme & Ergebnisse
 │── xauusd_analysis.py       # Analyse-Skript
 │── README.md                # Projektdokumentation

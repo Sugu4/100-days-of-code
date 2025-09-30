@@ -49,7 +49,7 @@ else:
 # Schritt 3: Analyse
 if not df.empty:
     # berechnene Saldo
-    df["Saldo"] = df.apply(lambda row: row["Amount"] if row["Type] == "Einnahme" else -row["Amount"], axis=1)
+    df["Saldo"] = df.apply(lambda row: row["Amount"] if row["Type"] == "Einnahme" else -row["Amount"], axis=1)
     df = df.sort_values("Date")  
 
 # Budget 

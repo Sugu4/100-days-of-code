@@ -4,9 +4,14 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime
 
-# Vorbereitung
-data_dir = "../data"
-output_dir = "../output"
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+PROJECT_ROOT = os.path.dirname(BASE_DIR)
+
+data_dir = os.path.join(PROJECT_ROOT, "data")
+output_dir = os.path.join(PROJECT_ROOT, "output")
+
 os.makedirs(data_dir, exist_ok=True)
 os.makedirs(output_dir, exist_ok=True)
 
@@ -14,46 +19,72 @@ csv_file = os.path.join(data_dir, "budget.csv")
 
 sns.set(style="whitegrid")
 
-# Schritt 1: Budgetdaten laden oder erstellen
-if os.path.exists(csv_file):
-    df = pd.read_csv(csv_file, parse_dates=["Date"])
+# --- Schritt 1: Budgetdaten laden oder erstellen ---
+if os.path.exists(csv_file) and os.path.getsize(csv_file) > 0:
+    try:
+        df = pd.read_csv(csv_file) 
+        df = df.dropna(how='all')
+        df = df.reset_index(drop=True)
+    except Exception as e:
+        print(f"⚠️ Fehler beim Laden von budget.csv: {e}. Starte mit leerem DataFrame.")
+        df = pd.DataFrame(columns=["Date", "Category", "Type", "Amount"])
 else:
     df = pd.DataFrame(columns=["Date", "Category", "Type", "Amount"])
     df.to_csv(csv_file, index=False)
 
-# Schritt 2: Konsolen Eingabe
+
+# --- Schritt 2: Konsolen Eingabe in einer Schleife ---
 print("\n💰 Haushaltsbudget")
-print("Neue Buchung hinzufügen (oder drücke Enter, um zu überspringen):")
 
-date_str = input("Datum (YYYY-MM-DD, leer = heute): ").strip()
-if date_str == "":
-    date_str = datetime.today().strftime("%Y-%m-%d")
+while True:
+    print("\n-------------------------------------------")
+    print("Neue Buchung hinzufügen (Datum leer = Analyse starten):")
 
-category = input("Kategorie (z. B. Miete, Lebensmittel, Gehalt): " ).strip()
-entry_type = input("Typ (Einnahme/Ausgabe): ").strip().capitalize()
-amount_str = input("Betrag in EUR: ").strip()
+    date_str = input("Datum (YYYY-MM-DD, leer = Analyse starten): ").strip()
+    
+    if not date_str:
+        break 
 
-if category and entry_type in ["Einnahme", "Ausgabe"] and amount_str:
     try:
-        amount = float(amount_str)
-        new_entry = {"Date": date_str, "Category": category, "Type": entry_type, "Amount": amount}
-        df = pd.concat([df, pd.DataFrame([new_entry])], ignore_index=True)
-        df.to_csv(csv_file, index=False)
-        print("✅ Buchung hinzugefügt!")
+        current_date = datetime.strptime(date_str, "%Y-%m-%d").strftime("%Y-%m-%d")
     except ValueError:
-        print("❌ Ungültiger Betrag. Buchung nicht hinzugefügt.")
-else:
-    print("ℹ️ Keine neue Buchung hinzugefügt.")
+        print("❌ Ungültiges Datumsformat. Bitte YYYY-MM-DD verwenden.")
+        continue 
 
-# Schritt 3: Analyse und Diagramme (Automatische Erstellung)
+    category = input("Kategorie (z. B. Miete, Lebensmittel, Gehalt): ").strip()
+    entry_type = input("Typ (Einnahme/Ausgabe): ").strip().capitalize()
+    amount_str = input("Betrag in EUR: ").strip()
+
+    if category and entry_type in ["Einnahme", "Ausgabe"] and amount_str:
+        try:
+            amount = float(amount_str)
+            new_entry = {"Date": current_date, "Category": category, "Type": entry_type, "Amount": amount}
+            
+            new_df = pd.DataFrame([new_entry])
+            df = pd.concat([df, new_df], ignore_index=True)
+            
+            df.to_csv(csv_file, index=False)
+            print("✅ Buchung hinzugefügt!")
+        except ValueError:
+            print("❌ Ungültiger Betrag. Buchung nicht hinzugefügt.")
+    else:
+        print("❌ Ungültige Eingabe (Kategorie oder Typ fehlt/falsch). Buchung nicht hinzugefügt.")
+
+
+# --- Schritt 3: Analyse und Diagramme ---
 if not df.empty:
-    df["Saldo"] = df.apply(lambda row: row["Amount"] if row["Type"] == "Einnahme" else -row["Amount"], axis=1)
-    df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
-    df = df.sort_values("Date")  
+    print(f"\n✅ Analyse wird gestartet. {len(df)} Buchungen gefunden.")
+    
+    # 1. Datenvorbereitung
+    df['Date'] = pd.to_datetime(df['Date'], errors='coerce') 
+    df = df.dropna(subset=['Date'])
 
-    # Diagramm 1: Kumulierter Verlauf
+    # 2. Sortierung und Saldo
+    df["Saldo"] = df.apply(lambda row: row["Amount"] if row["Type"] == "Einnahme" else -row["Amount"], axis=1)
+    df = df.sort_values(by=["Date", df.index]) 
     df["Kumuliert"] = df["Saldo"].cumsum()
 
+    # Diagramm 1: Kumulierter Verlauf
     plt.figure(figsize=(10,6))
     plt.plot(df["Date"], df["Kumuliert"], marker="o", label="Kumuliertes Budget", color="blue")
     plt.title("Budget Verlauf über Zeit")
@@ -64,7 +95,7 @@ if not df.empty:
     plt.tight_layout()
     plt.savefig(os.path.join(output_dir, "budget_uebersicht.png"))
     plt.close()
-    print("📊 Diagramm gespeichert: output/budget_uebersicht.png")
+    print("📊 Diagramm gespeichert: output/budget_uebersicht.png") 
 
     # Diagramm 2: Ausgaben nach Kategorien
     ausgaben = df[df["Type"] == "Ausgabe"].groupby("Category")["Amount"].sum().reset_index()
@@ -75,7 +106,7 @@ if not df.empty:
         plt.xlabel("EUR")
         plt.ylabel("Kategorie")
         plt.tight_layout()
-        plt.savefig(os.path.join(output_dir, "budget_kategorien_ausgaben.png")) # Dateiname angepasst
+        plt.savefig(os.path.join(output_dir, "budget_kategorien_ausgaben.png")) 
         plt.close()
         print("📊 Diagramm gespeichert: output/budget_kategorien_ausgaben.png")
 
@@ -83,7 +114,7 @@ if not df.empty:
     einnahmen = df[df["Type"] == "Einnahme"].groupby("Category")["Amount"].sum().reset_index()
     if not einnahmen.empty:
         plt.figure(figsize=(8,5))
-        sns.barplot(x="Amount", y="Category", data=einnahmen, palette="Greens_r") # Grüne Palette für Einnahmen
+        sns.barplot(x="Amount", y="Category", data=einnahmen, palette="Greens_r") 
         plt.title("Einnahmen nach Kategorien")
         plt.xlabel("EUR")
         plt.ylabel("Kategorie")
@@ -92,18 +123,18 @@ if not df.empty:
         plt.close()
         print("📊 Diagramm gespeichert: output/budget_kategorien_einnahmen.png")
         
-    # Diagramm 4: Einnahmen vs. Ausgaben Gesamt-Vergleich
+    # Diagramm 4: Gesamt Einnahmen vs. Ausgaben
     gesamt_einnahmen = einnahmen['Amount'].sum() if not einnahmen.empty else 0
     gesamt_ausgaben = ausgaben['Amount'].sum() if not ausgaben.empty else 0
     
     vergleich_df = pd.DataFrame({
-        'Typ': ['Gesamt-Einnahmen', 'Gesamt-Ausgaben'],
+        'Typ': ['Gesamt Einnahmen', 'Gesamt Ausgaben'],
         'Betrag': [gesamt_einnahmen, gesamt_ausgaben]
     })
     
     plt.figure(figsize=(7, 7))
     sns.barplot(x='Typ', y='Betrag', data=vergleich_df, palette=['green', 'red'])
-    plt.title('Gesamt-Einnahmen vs. Gesamt-Ausgaben')
+    plt.title('Gesamt Einnahmen vs. Gesamt Ausgaben')
     plt.ylabel('Betrag in EUR')
     plt.xlabel('')
     plt.tight_layout()

@@ -57,11 +57,11 @@ Thema: Aufbau einer REST-API mit FastAPI und Verbindung zu einem Vanilla-JavaScr
 
 **Besonderheiten & Funktionen**
 
-✅ **Full CRUD:** Tasks erstellen, anzeigen, bearbeiten (Status) und löschen.  
-✅ **Dynamische Anzeige:** Beschreibung wird nur angezeigt, wenn sie vorhanden ist.  
-✅ **Status-Toggle:** Klick auf den Task-Text schaltet `completed` (`✅/❌`) um.  
-✅ **Automatisierte DB:** Tabelle wird bei Serverstart erstellt (SQLite).  
-✅ **Clean Code:** Trennung von DB-Logik (`crud.py`) und API-Logik (`main.py`).
+- **Full CRUD:** Tasks erstellen, anzeigen, bearbeiten (Status) und löschen.  
+- **Dynamische Anzeige:** Beschreibung wird nur angezeigt, wenn sie vorhanden ist.  
+- **Status-Toggle:** Klick auf den Task-Text schaltet `completed` (`✅/❌`) um.  
+- **Automatisierte DB:** Tabelle wird bei Serverstart erstellt (SQLite).  
+- **Clean Code:** Trennung von DB-Logik (`crud.py`) und API-Logik (`main.py`).
 
 ---
 

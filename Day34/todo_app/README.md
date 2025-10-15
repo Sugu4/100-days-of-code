@@ -34,7 +34,7 @@ Thema: Aufbau einer REST-API mit FastAPI und Verbindung zu einem Vanilla-JavaScr
 **Vorschau & Setup**
 
 **Lokalen Server starten:**
-1. Virtuelle Umgebung aktivieren (`.\venv\Scripts\activate`).
+1. Virtuelle Umgebung aktivieren (`venv\Scripts\activate`).
 2. Im `todo_app/` Stammverzeichnis ausführen: `uvicorn backend.main:app --reload`.
 
 **API-Dokumentation (Swagger UI):**

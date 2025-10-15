@@ -15,6 +15,7 @@ Thema: Aufbau einer REST-API mit FastAPI und Verbindung zu einem Vanilla-JavaScr
 - **REST-API:** Erstellung von Endpunkten (`GET`, `POST`, `PUT`, `DELETE`).
 - **Debugging:** Behebung von `ModuleNotFoundError` und `ImportError` in Python-Paketstrukturen.
 - **Frontend-Konnektivität:** Nutzung von Vanilla JavaScript (`fetch()`) und CORS zur Kommunikation zwischen HTML/JS und dem FastAPI-Backend.
+- **Frontend-Styling:** Professionelle Anordnung von Formularelementen (Input/Textarea/Button) mithilfe von CSS Flexbox.
 
 ---
 
@@ -28,6 +29,7 @@ Thema: Aufbau einer REST-API mit FastAPI und Verbindung zu einem Vanilla-JavaScr
 | `class Task(BaseModel): ...`              | Definiert Pydantic-Schema zur Validierung von Requests/Responses.     |
 | `@app.post("/tasks")`                     | Erstellt einen neuen API-Endpunkt für HTTP POST-Anfragen.            |
 | `fetch(API + "/tasks", {method: "PUT"})`  | Sendet einen Request vom Frontend, um Daten zu aktualisieren.        |
+| `display: flex;`      | Anordnung von Elementen nebeneinander (z. B. Titel, Button).      |
 
 ---
 

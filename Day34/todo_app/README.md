@@ -41,7 +41,7 @@ Thema: Aufbau einer REST-API mit FastAPI und Verbindung zu einem Vanilla-JavaScr
 👉 http://127.0.0.1:8000/docs
 
 **Anwendung starten:**
-👉 [FastAPI_To-Do-App] (https://sugu4.github.io/100-days-of-code/Day34/todo_app/frontend/)
+👉 [FastAPI_To-Do-App](https://sugu4.github.io/100-days-of-code/Day34/todo_app/frontend/)
 
 ---
 

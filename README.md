@@ -54,6 +54,8 @@ Viel Spaß beim Stöbern und Lernen! 😊
 |  30 | Warenkorb-Analyse | [Day30](./Day30/) |
 |  31 | Warenkorb Statistik & Trends | [Day31](./Day31/) |
 |  32 | XAU/USD Analyse (Goldpreis) | [Day32](./Day32/) |
+|  33 | Budget Tracker Haushalt | [Day33](./Day33/) |
+|  34 | FastAPI To-Do-App mit Frontend-Anbindung | [Day34](./Day34/) |
 
 ---
 

@@ -1,0 +1,95 @@
+/* frontend/style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #a4b9e7;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #95d395;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ANPASSUNG FÜR DIE FORMULAR-STRUKTUR */
+#new-task {
+  display: flex; /* Flexbox für die Sektion */
+  gap: 10px;    /* Abstand zwischen Elementen */
+  margin-bottom: 20px;
+  align-items: flex-start; /* Elemente oben ausrichten */
+}
+
+/* NEUE GRUPPIERUNG FÜR INPUTS */
+.input-group {
+    display: flex;
+    flex-direction: column; /* Inputs sollen untereinander stehen */
+    flex-grow: 1; /* Nimmt den meisten verfügbaren Platz ein */
+}
+
+#title, #description {
+  width: 100%; /* Sorge dafür, dass beide 100% der Gruppe ausfüllen */
+  padding: 10px;
+  margin-bottom: 5px; /* Abstand zwischen Titel und Beschreibung */
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Wichtig für die Breitenberechnung */
+}
+
+#description {
+    resize: vertical; /* Erlaube nur vertikales Ändern der Größe */
+    min-height: 50px;
+}
+
+#addBtn {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  align-self: flex-start; /* Button ist oben ausgerichtet */
+}
+
+/* Styling für Tasks */
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+#taskList li {
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: #eee;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.task-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.task-content span {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 3px;
+    word-wrap: break-word;
+}
+
+.task-description {
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+#taskList li button {
+    align-self: flex-start;
+}

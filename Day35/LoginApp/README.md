@@ -44,7 +44,7 @@ Thema: Implementierung eines vollständigen Login- und Registrierungssystems mit
 **Frontend starten (separates Terminal):**
 1. Aktiviere virtuelle Umgebung (`.\venv\Scripts\activate`) im `LoginAPP/`
 1. Dannach `cd frontend/` im Ordner ausführen: `python -m http.server 5500`.
-2. Öffnen Sie: [**http://127.0.0.1:5500/register.html**](https://sugu4.github.io/100-days-of-code/Day35/LoginApp/frontend/)
+2. Öffnen Sie: [**http://127.0.0.1:5500/register.html**](https://sugu4.github.io/100-days-of-code/Day35/LoginApp/frontend/register)
 
 **API-Dokumentation (Swagger UI):**  
 - Automatisch generierte Benutzeroberfläche für FastAPI (`http://127.0.0.1:8000/docs`)

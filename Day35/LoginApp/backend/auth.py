@@ -1,4 +1,3 @@
-from passlib.handlers.bcrypt import bcrypt
 import os
 from datetime import datetime, timedelta
 from typing import Optional

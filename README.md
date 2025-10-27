@@ -66,7 +66,6 @@ Dieses Projekt richtet sich an:
 
 - 👩‍💻 Entwickler:innen auf Lernreise
 - 📚 Schüler:innen, Umschüler & Quereinsteiger
-- 🔍 Recruiter, die meine Entwicklung verfolgen wollen
 - 🚀 Alle, die inspirierende Mini-Projekte suchen
 
 ---
@@ -77,6 +76,7 @@ Dieses Projekt richtet sich an:
 - Mehr Fokus auf mobile Nutzbarkeit
 - Python und API -Projekte nach Tag 30 geplant
 - Erste Schritte mit Datenanalyse & Automatisierung
+- Fullstack-Webentwickler mit Fokus auf Python & FastAPI
 
 ---
 

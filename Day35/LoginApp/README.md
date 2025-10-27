@@ -62,10 +62,10 @@ Thema: Implementierung eines vollständigen Login- und Registrierungssystems mit
 
 **Besonderheiten & Funktionen**
 
-✅ **Sichere Auth:** Benutzerregistrierung und Login mit gehashten Passwörtern.  
-✅ **Geschützte Route:** Profil-Endpunkt (`/users/me`) nur mit gültigem JWT zugänglich.  
-✅ **Clean Setup:** Korrekte Projektstruktur und Verwendung von `.env`.  
-✅ **Fehlerresistent:** Verwendung von PBKDF2, um bcrypt-Kompatibilitätsprobleme zu vermeiden.
+- **Sichere Auth:** Benutzerregistrierung und Login mit gehashten Passwörtern.  
+- **Geschützte Route:** Profil-Endpunkt (`/users/me`) nur mit gültigem JWT zugänglich.  
+- **Clean Setup:** Korrekte Projektstruktur und Verwendung von `.env`.  
+- **Fehlerresistent:** Verwendung von PBKDF2, um bcrypt-Kompatibilitätsprobleme zu vermeiden.
 
 ---
 

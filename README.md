@@ -56,7 +56,7 @@ Viel Spaß beim Stöbern und Lernen! 😊
 |  32 | XAU/USD Analyse (Goldpreis) | [Day32](./Day32/) |
 |  33 | Budget Tracker Haushalt | [Day33](./Day33/) |
 |  34 | FastAPI To-Do-App mit Frontend-Anbindung | [Day34](./Day34/) |
-|  35 | FastAPI Benutzer-Authentifizierung (JWT) | [Day35](./Day35/) |
+|  35 | FastAPI Benutzer-Authentifizierung (JWT) | [Day35](./Day35/LoginApp) |
 
 ---
 

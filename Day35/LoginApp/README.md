@@ -46,8 +46,8 @@ Thema: Implementierung eines vollständigen Login- und Registrierungssystems mit
 1. Dannach `cd frontend/` im Ordner ausführen: `python -m http.server 5500`.
 2. Öffnen Sie: **http://127.0.0.1:5500/register.html**
 
-**API-Dokumentation (Swagger UI):**
-Automatisch generierte Benutzeroberfläche für FastAPI (`http://127.0.0.1:8000/docs`)
+**API-Dokumentation (Swagger UI):**  
+- Automatisch generierte Benutzeroberfläche für FastAPI (`http://127.0.0.1:8000/docs`)
 
 ---
 

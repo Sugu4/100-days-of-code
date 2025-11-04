@@ -62,6 +62,14 @@ python -m http.server 5500
 
 - backend/auth.py – Hashing (PBKDF2) und JWT-Erstellung
 
+- backend/database.py - Datenbankverbindung, definiert die Verbindung zur SQLite-Datei
+
+- backend/model.py - Datenbank-Struktur, definiert die User-Tabelle mit SQLModel
+
+- backend/schemas.py - Datenvalidierung, definiert die Datenformate (UserCreate,Token) die FastAPI (Input, Output)
+
+- backend/crud.py - Datenbank-Operationen, enthält die Kernlogik für Create und Read (Benutzer erstellen)
+
 - frontend/index.html – Die Login-Seite
 
 - frontend/dashboard.html – Die geschützte Seite zur Anzeige der Benutzerdaten

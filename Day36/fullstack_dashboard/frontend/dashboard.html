@@ -3,31 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <title>User Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Willkommen!</h1>
-  <p id="userInfo"></p>
-  <button onclick="logout()">Logout</button>
+  <main class="card-container">
+    <h1>Willkommen!</h1>
+    <p>Sie sind erfolgreich eingeloggt.</p>
+    <section id="profile-data" class="card">
+        <h2>Ihr Profil</h2>
+        <p><strong>Username:</strong> <span id="username"></span></p>
+        <p><strong>E-Mail:</strong> <span id="email"></span></p>
+        <p><strong>Registriert seit:</strong> <span id="created_at"></span></p>
+    </section>
+    <button id="logoutBtn" onclick="logout()">Logout</button>
+  </main>
 
   <script>
-    async function getUserData() {
-      const token = localStorage.getItem("token");
-      if (!token) return window.location.href = "index.html";
+    const API = "http://127.0.0.1:8000";
 
-      const response = await fetch("http://127.0.0.1:8000/auth/me", {
+    async function getUserData() {
+      // 🎯 KORREKTUR 3: Token wird unter 'access_token' abgerufen
+      const token = localStorage.getItem("access_token");
+      if (!token) return window.location.href = "index.html"; 
+
+      // 🎯 KORREKTUR 4: Abruf der Benutzerdaten vom geschützten Endpunkt
+      const response = await fetch(`${API}/users/me`, {
         headers: { "Authorization": "Bearer " + token }
       });
 
       if (response.ok) {
-        const data = await response.json();
-        document.getElementById("userInfo").innerText = `Eingeloggt als: ${data.email}`;
+        const user = await response.json();
+        // Daten in die HTML-Felder einfügen
+        document.getElementById("username").innerText = user.username;
+        document.getElementById("email").innerText = user.email;
+        document.getElementById("created_at").innerText = new Date(user.created_at).toLocaleDateString();
       } else {
+        // Wenn Token ungültig, zur Login-Seite zurückleiten
+        localStorage.removeItem("access_token");
         window.location.href = "index.html";
       }
     }
 
     function logout() {
-      localStorage.removeItem("token");
+      localStorage.removeItem("access_token");
       window.location.href = "index.html";
     }
 

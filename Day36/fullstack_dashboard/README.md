@@ -52,7 +52,7 @@ python -m http.server 5500
 
 **4. Öffnen im Browser die Login-Seite:**
 
-- http://127.0.0.1:5500/index.html
+- [fullstack_dashboard](https://sugu4.github.io/100-days-of-code/Day36/LoginAppfullstack_dashboard/frontend/index.html)
 
 ---
 

@@ -57,6 +57,7 @@ Viel Spaß beim Stöbern und Lernen! 😊
 |  33 | Budget Tracker Haushalt | [Day33](./Day33/) |
 |  34 | FastAPI To-Do-App mit Frontend-Anbindung | [Day34](./Day34/todo_app) |
 |  35 | FastAPI Benutzer-Authentifizierung (JWT) | [Day35](./Day35/LoginApp) |
+|  36 | Fast API Mini-User-Dashboard | [Day36](./Day36/fullstack_dashboard) |
 
 ---
 

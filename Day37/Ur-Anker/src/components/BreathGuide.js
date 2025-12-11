@@ -149,7 +149,6 @@ const styles = StyleSheet.create({
         width: 180,
         height: 180,
         borderRadius: 90,
-        // Farbe wird dynamisch gesetzt
         alignItems: 'center',
         justifyContent: 'center',
         shadowColor: '#000',
@@ -157,16 +156,20 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.3,
         shadowRadius: 5,
         elevation: 10,
+        paddingHorizontal: 10,
     },
     focusText: {
         color: 'white',
         fontWeight: 'bold',
         fontSize: 20,
+        textAlign: 'center',
+        paddingHorizontal: 10,
     },
     feelingText: {
         color: 'white',
         fontSize: 16,
         marginTop: 5,
+        textAlign: 'center',
     },
     tipText: {
         marginTop: 50,

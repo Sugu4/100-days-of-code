@@ -24,7 +24,7 @@ const SESSION_CONFIG = {
   },
   EVENING: {
     type: 'Abend-Anker',
-    duration: 10 * 60 * 1000, // 10 Minuten
+    duration: 5 * 60 * 1000, // 5 Minuten
     feeling: 'Dankbarkeit & Vergebung'
   }
 }
@@ -45,18 +45,18 @@ const HomeScreen = ({ setCurrentScreen, dailyLogs }) => {
 
   if (hour >= 6 && hour < 11) {
     currentSession = SESSION_CONFIG.MORNING;
-    headline = "🌅 Guten Morgen! Starte deine Kalibrierung.";
+    headline = "Guten Morgen! Starte deine Kalibrierung.";
     buttonText = "Morgen-Anker (5 Min.) starten";
     icon = "🌅";
   } else if (hour >= 18 && hour < 22) {
     currentSession = SESSION_CONFIG.EVENING;
-    headline = "🌙 Der Tag klingt aus. Finde Ruhe.";
-    buttonText = "Abend-Anker (10 Min.) starten";
+    headline = "Der Tag klingt aus. Finde Ruhe.";
+    buttonText = "Abend-Anker (5 Min.) starten";
     icon = "🌙";
   } else {
-    headline = "🌟 Ur-Anker ist bereit. Dein Tag ist verankert.";
-    buttonText = "Zur täglichen Übersicht";
-    icon = "💡";
+    headline = "Die geführte Morgen-/Abend-Session ist aktuell nicht aktiv.";
+    buttonText = "Tägliche Übersicht & Notizen öffnen";
+    icon = "";
   }
 
   const startBreathingOrLog = () => {
@@ -92,7 +92,7 @@ const HomeScreen = ({ setCurrentScreen, dailyLogs }) => {
             style={homeStyles.logButton}
             onPress={() => setCurrentScreen(SCREEN.LOG)}
           >
-            <Text style={homeStyles.logButtonText}>✍️ Tages-Notizen erfassen</Text>
+            <Text style={homeStyles.logButtonText}> Tages-Notizen erfassen</Text>
           </TouchableOpacity>
         </View>
 
@@ -103,7 +103,7 @@ const HomeScreen = ({ setCurrentScreen, dailyLogs }) => {
             style={homeStyles.viewLogButton}
             onPress={() => setCurrentScreen(SCREEN.LOG_VIEWER)}
           >
-            <Text style={homeStyles.viewLogButtonText}>📖 Notizen und Verlauf ansehen</Text>
+            <Text style={homeStyles.viewLogButtonText}> Notizen und Verlauf ansehen</Text>
           </TouchableOpacity>
         </View>
 
@@ -111,7 +111,7 @@ const HomeScreen = ({ setCurrentScreen, dailyLogs }) => {
         <View style={homeStyles.section}>
           <Text style={homeStyles.sectionTitle}>Deine Verankerung</Text>
           <View style={homeStyles.statsBox}>
-            <Text style={homeStyles.statsValue}>🔥 {currentStreak} Tage Streak</Text>
+            <Text style={homeStyles.statsValue}> {currentStreak} Tage Streak</Text>
             <Text style={homeStyles.statsTip}>Ziel: 30 Tage in Folge</Text>
           </View>
         </View>
@@ -158,7 +158,6 @@ export default function App() {
   if (currentScreen.name === SCREEN.HOME) {
     screenContent = <HomeScreen setCurrentScreen={setScreen} dailyLogs={dailyLogs} />;
   } else if (currentScreen.name === SCREEN.BREATHING) {
-    // 🚨 KORREKTUR: Muss in einem View-Container liegen!
     screenContent = (
       <View style={appStyles.fullScreen}>
         <BreathGuide

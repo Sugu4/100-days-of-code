@@ -36,8 +36,8 @@ Stellen Sie sicher, dass Node.js (LTS-Version) und Expo CLI global installiert s
 
 1.  **Repository klonen & Ordner wechseln:**
     ```bash
-    git clone [Ihre-GitHub-URL]
-    cd Ur-Anker
+    git clone https://github.com/Sugu4/100-days-of-code.git
+    cd /Day37/Ur-Anker
     ```
 
 2.  **Abhängigkeiten installieren:**

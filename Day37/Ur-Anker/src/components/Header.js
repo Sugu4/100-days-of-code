@@ -1,13 +1,13 @@
 // UrAnker/src/components/Header.js
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, SafeAreaView, Platform } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 // Simuliertes Pfeil-Icon, da wir keine Icon-Bibliotheken haben
 const BackArrow = () => <Text style={{ fontSize: 24, color: '#4A90E2', paddingRight: 5 }}>←</Text>;
 
 const Header = ({ title, onBack }) => {
     return (
-        <SafeAreaView style={styles.safeArea}>
+        <View style={styles.headerContainer}>
             <View style={styles.header}>
                 <TouchableOpacity onPress={onBack} style={styles.backButton}>
                     <BackArrow />
@@ -17,17 +17,17 @@ const Header = ({ title, onBack }) => {
                 {/* Dummy Platzhalter für Layout */}
                 <View style={styles.dummySpace}></View>
             </View>
-        </SafeAreaView>
+        </View>
     );
 };
 
 const styles = StyleSheet.create({
-    safeArea: {
+    headerContainer: {
         backgroundColor: '#fff',
-        // Schatten/Trennlinie nur unten
         borderBottomWidth: 1,
         borderBottomColor: '#eee',
         paddingTop: 10,
+        width: '100%',
     },
     header: {
         flexDirection: 'row',

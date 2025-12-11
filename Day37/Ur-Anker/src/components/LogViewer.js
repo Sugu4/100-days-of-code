@@ -20,7 +20,7 @@ const LogViewer = ({ dailyLogs, resetToHome }) => {
                 {dailyLogs.length === 0 ? (
                     <Text style={styles.emptyText}>Noch keine Einträge gespeichert. Starte deinen ersten Anker!</Text>
                 ) : (
-                    dailyLogs.map((log, index) => (
+                    dailyLogs.reverse().map((log, index) => (
                         <View key={index} style={styles.logCard}>
                             <Text style={styles.cardHeader}>{formatEntry(log)}</Text>
                             

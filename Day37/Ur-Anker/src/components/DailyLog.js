@@ -1,14 +1,14 @@
 // UrAnker/src/components/DailyLog.js (Überarbeitet)
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, TextInput, ScrollView, Alert, Platform } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, TextInput, ScrollView, Alert } from 'react-native';
 import Header from './Header';
 
 const DailyLog = ({ onSave, resetToHome, sessionCompleted }) => {
     // onSave ist die neue Funktion, die den Eintrag in App.js speichert
-    const [moodScore, setMoodScore] = useState(4); 
+    const [moodScore, setMoodScore] = useState(4);
     const [notes, setNotes] = useState('');
     const [stressEvent, setStressEvent] = useState('');
-    
+
     const moodEmojis = ['😞 (Sehr schwer)', '🙁 (Schwer)', '😐 (Neutral)', '🙂 (Gut)', '😊 (Exzellent)'];
 
     const handleSave = () => {
@@ -19,12 +19,14 @@ const DailyLog = ({ onSave, resetToHome, sessionCompleted }) => {
             sessionCompleted, // Z.B. 'Morgen-Anker'
             date: new Date().toISOString(),
         };
-        
-        onSave(newLog); // Speichert den Log-Eintrag in App.js
+
+        if (typeof onSave === 'function') {
+            onSave(newLog);
+        }
         Alert.alert('Erfolg', 'Dein Tagebucheintrag wurde gespeichert.');
-        
+
         // Nach dem Speichern zurück zum Home-Screen
-        resetToHome(); 
+        resetToHome();
     };
 
     return (
@@ -32,10 +34,10 @@ const DailyLog = ({ onSave, resetToHome, sessionCompleted }) => {
             <Header title="Tages-Reflexion" onBack={resetToHome} />
             <ScrollView contentContainerStyle={styles.container}>
                 <Text style={styles.title}>✍️ Dein Ur-Anker Tagebuch</Text>
-                
+
                 {sessionCompleted && (
                     <Text style={styles.sessionInfo}>
-                        Abgeschlossene Session: <Text style={{fontWeight: 'bold', color: '#4A90E2'}}>{sessionCompleted}</Text>
+                        Abgeschlossene Session: <Text style={{ fontWeight: 'bold', color: '#4A90E2' }}>{sessionCompleted}</Text>
                     </Text>
                 )}
 

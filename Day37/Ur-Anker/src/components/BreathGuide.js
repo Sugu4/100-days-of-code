@@ -1,5 +1,5 @@
 // UrAnker/src/components/BreathGuide.js
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { View, Text, StyleSheet, Animated, Easing, Alert } from 'react-native';
 import Header from './Header';
 
@@ -12,7 +12,7 @@ const BreathGuide = ({ duration, feeling, onComplete, onBack }) => {
 
     const [timeLeft, setTimeLeft] = useState(totalDuration);
     const [phase, setPhase] = useState('INHALE');
-    const scaleAnim = new Animated.Value(0);
+    const scaleAnim = useRef(new Animated.Value(0)).current;
 
     // 1. Visueller Atem-Pulsator
     const startBreathingAnimation = () => {
@@ -41,19 +41,18 @@ const BreathGuide = ({ duration, feeling, onComplete, onBack }) => {
     useEffect(() => {
         startBreathingAnimation();
 
-        // 🚨 KORREKTUR: Phase-Umschaltung muss hier eingefügt werden!
         const phaseInterval = setInterval(() => {
             setPhase(currentPhase => currentPhase === 'INHALE' ? 'EXHALE' : 'INHALE');
-        }, INHALE_EXHALE_DURATION); // Alle 5 Sekunden
+        }, INHALE_EXHALE_DURATION);
 
         const timer = setInterval(() => {
             setTimeLeft(prevTime => {
                 if (prevTime <= 1000) {
                     clearInterval(timer);
-                    clearInterval(phaseInterval); // Beendet die Phasen-Umschaltung
+                    clearInterval(phaseInterval);
                     Alert.alert("Anker gesetzt!", `${feeling} wurde in deinem Herzen verankert.`);
-                    if (onComplete) {
-                        onComplete(); 
+                    if (typeof onComplete === 'function') {
+                        onComplete();
                     }
                     return 0;
                 }
@@ -61,12 +60,13 @@ const BreathGuide = ({ duration, feeling, onComplete, onBack }) => {
             });
         }, 1000);
 
-        // Aufräumfunktion beim Verlassen der Komponente
         return () => {
             clearInterval(timer);
             clearInterval(phaseInterval);
+            scaleAnim.stopAnimation && scaleAnim.stopAnimation(); // optional
         };
-    }, [totalDuration, onComplete, feeling]);
+    }, []);
+
 
     const formattedTime = new Date(timeLeft).toISOString().substr(14, 5);
 

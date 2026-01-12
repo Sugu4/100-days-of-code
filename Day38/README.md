@@ -52,7 +52,7 @@ Das Projekt verwendet ein bewusst simples, aber erweiterbares Datenmodell:
 2. `index.html` im Browser öffnen
 3. Aufgaben hinzufügen – fertig ✅
 
-👉
+👉 https://sugu4.github.io/100-days-of-code/Day38/
 
 ## Geplante Erweiterungen (Roadmap)
 

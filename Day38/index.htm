@@ -173,7 +173,16 @@ button {
 </div>
 
 <script>
-let todos = JSON.parse(localStorage.getItem('todos') || '[]');
+let todos = [];
+
+try {
+  todos = JSON.parse(localStorage.getItem('todos')) || [];
+} catch (e) {
+  console.warn('localStorage zurückgesetzt (ungültige Daten)');
+  localStorage.removeItem('todos');
+  todos = [];
+}
+
 let filter = 'all';
 
 const list = document.getElementById('list');

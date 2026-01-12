@@ -159,11 +159,17 @@ let todos = [];
 
 try {
   todos = JSON.parse(localStorage.getItem('todos')) || [];
-} catch (e) {
-  console.warn('localStorage zurückgesetzt (ungültige Daten)');
+} catch {
   localStorage.removeItem('todos');
   todos = [];
 }
+
+todos = todos.map(t => ({
+  text: t.text ?? '',
+  done: Boolean(t.done),
+  subs: Array.isArray(t.subs) ? t.subs : []
+}));
+
 
 let filter = 'all';
 

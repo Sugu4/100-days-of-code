@@ -37,14 +37,14 @@ body {
 .app-shell {
   padding: 16px;
   width: 100%;
-  max-width: 420px;
+  max-width: clamp(320px, 60vw, 640px);
 }
 
 .fokus-card {
   position: relative;
   background: linear-gradient(145deg, var(--card-top), var(--card-bottom));
-  border-radius: 28px;
-  padding: 18px 20px 14px;
+  border-radius: clamp(20px, 3vw, 32px);
+  padding: clamp(16px, 2.5vw, 28px);
   box-shadow:
     0 20px 40px rgba(0, 0, 0, 0.8),
     0 0 0 1px var(--card-border),
@@ -59,13 +59,13 @@ body {
 }
 
 .corner-logo {
-  width: 26px;
-  height: 26px;
+  width: clamp(20px, 4vw, 32px);
+  height: auto;
 }
 
 .fokus-title {
-  font-size: 1.1rem;
-  letter-spacing: 0.22em;
+  font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+  letter-spacing: clamp(0.18em, 0.25vw, 0.3em);
   color: var(--text-fokus);
 }
 
@@ -74,18 +74,19 @@ body {
   margin-bottom: 10px;
 }
 
-#status {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.24em;
-  color: var(--status-focus);
-  text-shadow: 0 0 10px rgba(197, 255, 58, 0.6);
+#statusDot {
+  width: 10px;
+  height: 10px;
+  margin: 0 auto 6px;
+  border-radius: 50%;
+  background-color: var(--status-focus);
+  box-shadow: 0 0 10px rgba(197, 255, 58, 0.6);
 }
 
 #zeit {
   font-family: "Consolas", "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, "Courier New", monospace;
-  font-size: 3rem;
-  letter-spacing: 0.18em;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  letter-spacing: clamp(0.12em, 0.25vw, 0.2em);
   color: #e8fff8;
   text-shadow:
     0 0 6px rgba(0, 245, 255, 0.6),
@@ -93,7 +94,6 @@ body {
   font-weight: 600;
 }
 
-/* Balken */
 .fokus-bar-frame {
   margin: 6px 0 10px;
 }
@@ -109,7 +109,7 @@ body {
 .fokus-bar-bg {
   position: relative;
   width: 100%;
-  height: 20px;
+  height: clamp(20px, 4vw, 32px);
   border-radius: 999px;
   background: #11161f;
   box-shadow:

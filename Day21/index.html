@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <title>Tag 21 – Pomodoro Pro</title>
-  <link rel="stylesheet" href="style.css" >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/BrainHeart.svg">
+  <title>Fokos Pro</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>🍅Pomodoro Pro</h1>
-    <div class="timer">
-      <div id="status">Fokus</div>
-      <div id="zeit">25:00</div>
+  <div class="app-shell">
+    <div class="fokus-card">
+
+
+      <div class="fokus-header">
+        <img src="assets/BrainHeart.svg" alt="Mind Logo" class="corner-logo">
+        <span class="fokus-title"></span>
+        <img src="assets/Logo WebM24.svg" alt="Control Logo" class="corner-logo">
+      </div>
+
+      <div class="fokus-timer">
+        <div id="status">Fokus</div>
+        <div id="zeit">25:00</div>
+      </div>
+
+      <div class="fokus-bar-frame">
+        <!-- <img src="assets/fokus-bar-frame.svg" alt="" class="fokus-bar-svg"> -->
+        <div class="fokus-bar-bg">
+          <div id="fokusFill"></div>
+        </div>
+      </div>
+
+      <div class="fokus-footer">
+        <div id="zyklusInfo">Zyklus: 1</div>
+        <div class="controls">
+          <button id="startBtn" onclick="startTimer()">Start</button>
+          <button onclick="resetTimer()">Reset</button>
+        </div>
+      </div>
+
     </div>
-    <div class="controls">
-      <button onclick="startTimer()">▶️Start</button>
-      <button onclick="resetTimer()">🔁Reset</button>
-    </div>
-    <p id="zyklusInfo">Zyklus: 1</p>
   </div>
 
   <audio id="alarm" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"></audio>

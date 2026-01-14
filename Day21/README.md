@@ -36,7 +36,7 @@ Thema: Ein Timer mit Fokus-/Pausenmodus, Soundeffekt und Zyklusanzeige
 **Vorschau**
 
 Live-Demo auf GitHub Pages:  
-👉 [Pomodoro-Timer – Jetzt ausprobieren](https://sugu4.github.io/100-days-of-code/Day21/)
+👉 [Fokus Pro – Jetzt ausprobieren](https://sugu4.github.io/100-days-of-code/Day21/)
 
 ---
 

@@ -42,7 +42,7 @@ Viel Spaß beim Stöbern und Lernen! 😊
 |  18 | Anpassbarer Passwort-Genarator | [Day18](./Day18/) |
 |  19 | 3D Flip Card mit Glanzeffekt | [Day19](./Day19/) |
 |  20 | Pomodoro-Timer | [Day20](./Day20/) |
-|  21 | Pomodoro-Timer mit Alarm & Zyklen-Tracking | [Day21](./Day21/) |
+|  21 | Pomodoro Pro – Fokus Steel Edition | [Day21](./Day21/) |
 |  22 | Interaktive Atem-Übung mit Animation & Hintergrundmusik | [Day22](./Day22/) |
 |  23 | Interaktive Weltkarte mit Marker-Funktionalität | [Day23](./Day23/) |
 |  24 | Binär- und Dezimal-Umrechner | [Day24](./Day24/) |

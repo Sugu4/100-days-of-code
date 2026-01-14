@@ -3,8 +3,7 @@
 Datum: 28. Juli 2025  
 Dauer: 2,5 Stunden  
 Thema: Ein Timer mit Fokus-/Pausenmodus, Soundeffekt und Zyklusanzeige  
-📌Update: Steel Edition, Balkne wird gefüllt und entlert Potimaler Design und effekt.  
-Minimalistisch Steel Edition
+**📌Update: 14.01.2026, Steel Edition, Balken wird gefüllt und entlert Potimaler Design und effekt.  Minimalistisch Steel Edition**
 
 ---
 

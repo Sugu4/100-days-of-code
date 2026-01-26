@@ -239,7 +239,7 @@
 
 
 if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-    const maxRotateX = 66;
+    const maxRotateX = 60;
     const maxRotateY = 18;
     const translateZ  = 46;
 
@@ -251,8 +251,8 @@ if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
         const percentX = (x / rect.width) - 0.5;
         const percentY = (y / rect.height) - 0.5;
 
-        const rotateY = -percentX * maxRotateY * 4;
-        const rotateX =  percentY * maxRotateX * 4;
+        const rotateY = -percentX * maxRotateY * 3;
+        const rotateX =  percentY * maxRotateX * 3;
 
         card.style.transform =
             `rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(${translateZ}px)`;

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Zeit- & Kostenrechner für Routineaufgaben</title>
+  <meta name="description" content="Berechne in Sekunden, wie viel Zeit und Geld du jedes Jahr durch wiederkehrende Aufgaben verlierst und erkenne dein Automatisierungspotenzial."> <!-- [web:30] -->
+  <meta property="og:title" content="Zeit- & Kostenrechner für Routineaufgaben">
+  <meta property="og:description" content="Berechne in Sekunden, wie viel Zeit und Geld du durch wiederkehrende Aufgaben verlierst - inkl. Automatisierungspotenzial.">
+  <!-- Hier deine echte Bild-URL eintragen, z.B. GitHub Pages URL zu og-image -->
+  <meta property="og:image" content="https://DEIN-NAME.github.io/zeitkosten-rechner/assets/og-zeitrechner.png"> <!-- 1200x627 empfohlen für Link-Preview [web:32][web:35][web:38] -->
+  <meta property="og:url" content="https://DEIN-NAME.github.io/zeitkosten-rechner/">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon: Lege z.B. favicon.ico ins Repo-Root -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- GitHub Pages akzeptiert so ein simples Setup gut [web:31] -->
+
+  <!-- Schrift -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #0FAA94;
+      --secondary: #2c65d8;
+      --bg-gradient: linear-gradient(135deg, #0FAA94 0%, #2c65d8 100%);
+      --card-bg: #ffffff;
+      --text-main: #305173;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--bg-gradient);
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-main);
+      padding: 20px;
+    }
+
+    .calc-container {
+      background: var(--card-bg);
+      border-radius: 32px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+      padding: 2.5rem;
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      background: var(--bg-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 800;
+      font-size: 1rem;
+    }
+
+    .brand-text {
+      font-size: 0.8rem;
+      color: #6b7b8f;
+      font-weight: 600;
+      text-align: left;
+    }
+
+    h1 {
+      background: linear-gradient(90deg, #0066BF, #0FAA94);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+
+    p.subtitle {
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      opacity: 0.85;
+      line-height: 1.4;
+    }
+
+    .input-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      text-align: left;
+      margin-bottom: 1.5rem;
+    }
+
+    .input-group {
+      margin-bottom: 0.5rem;
+    }
+
+    .full-width {
+      grid-column: span 2;
+    }
+
+    .group-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #8a9db3;
+      grid-column: span 2;
+      margin-bottom: 0.25rem;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      font-size: 0.8rem;
+      color: #555;
+    }
+
+    .helper {
+      font-size: 0.7rem;
+      color: #9aa6b6;
+      margin-top: 2px;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 10px 12px;
+      border: 2px solid #eef2f6;
+      border-radius: 12px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: all 0.3s;
+      appearance: textfield;
+    }
+
+    input[type="number"]:focus {
+      outline: none;
+      border-color: var(--primary);
+      background: #f9ffff;
+    }
+
+    /* Entfernt Pfeile in manchen Browsern */
+    input[type=number]::-webkit-outer-spin-button,
+    input[type=number]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    .result-card {
+      background: #f6fcff;
+      border: 2px solid var(--primary);
+      border-radius: 20px;
+      padding: 1.5rem;
+      margin-top: 1rem;
+      transition: transform 0.2s;
+    }
+
+    .result-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .result-card-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #2c3e50;
+    }
+
+    .result-value {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--secondary);
+      display: block;
+      margin: 5px 0;
+      min-height: 2.4rem;
+    }
+
+    .result-note {
+      font-size: 0.9rem;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    .cta {
+      margin-top: 1.5rem;
+      padding: 0.9rem 1.4rem;
+      border-radius: 999px;
+      border: none;
+      background: var(--bg-gradient);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 35px rgba(0,0,0,0.25);
+    }
+
+    .cta:active {
+      transform: translateY(0);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+
+    .footer-note {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #6b7b8f;
+      line-height: 1.5;
+      border-top: 1px solid #e3ecf5;
+      padding-top: 1rem;
+    }
+
+    @media (max-width: 480px) {
+      .calc-container {
+        padding: 1.5rem;
+        border-radius: 24px;
+      }
+      h1 {
+        font-size: 1.4rem;
+      }
+      .input-grid {
+        grid-template-columns: 1fr;
+      }
+      .full-width,
+      .group-label {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="calc-container">
+    <div class="brand-row">
+      <div class="brand-mark">SG</div>
+      <div class="brand-text">
+        Süleyman Gümüs<br>Prozesse besser machen
+      </div>
+    </div>
+
+    <h1>Was kosten deine Routineaufgaben wirklich?</h1>
+    <p class="subtitle">
+      Gib ein, wie lange eine wiederkehrende Aufgabe dauert - der Rechner zeigt dir, wie viel Zeit und Geld du jedes Jahr verlierst.
+    </p>
+
+    <div class="input-grid">
+      <div class="group-label">Rahmen</div>
+
+      <div class="input-group full-width">
+        <label for="hourlyRate">Kosten pro Arbeitsstunde (€)</label>
+        <input type="number" id="hourlyRate" value="50" min="0" step="1" placeholder="z. B. 50">
+        <div class="helper">Bruttokosten inkl. Lohnnebenkosten geschätzt.</div>
+      </div>
+
+      <div class="group-label">Aufgabe</div>
+
+      <div class="input-group">
+        <label for="minutes">Dauer der Aufgabe (Minuten)</label>
+        <input type="number" id="minutes" value="30" min="0" step="5">
+      </div>
+
+      <div class="input-group">
+        <label for="frequency">Wie oft pro Woche?</label>
+        <input type="number" id="frequency" value="5" min="0" step="1">
+      </div>
+
+      <div class="input-group full-width">
+        <label for="weeks">Arbeitswochen pro Jahr</label>
+        <input type="number" id="weeks" value="42" min="0" max="52" step="1">
+      </div>
+    </div>
+
+    <div class="result-card">
+      <span class="result-card-title">Verlust durch diese Aufgabe pro Jahr</span>
+      <span id="savings" class="result-value">Bitte Werte eingeben</span>
+      <p id="time-note" class="result-note">
+        Das sind <b>0 Stunden</b>, die du für wichtigere Themen wie Vertrieb, Strategie oder Kunden nutzen könntest.
+      </p>
+      <p class="result-note" style="margin-top: 6px; font-size: 0.8rem; opacity: 0.8;">
+        Grobe Schätzung auf Basis deiner Eingaben, ohne Gemeinkosten.
+      </p>
+    </div>
+
+    <button class="cta" type="button" onclick="openContact()">
+      Prozess kostenlos einschätzen lassen
+    </button>
+
+    <div class="footer-note">
+      Erstellt von <b>Süleyman Gümüs</b> · einfache Tools, um ineffiziente Prozesse sichtbar zu machen.
+    </div>
+  </div>
+
+  <script>
+    const rateInput = document.getElementById('hourlyRate');
+    const minsInput = document.getElementById('minutes');
+    const freqInput = document.getElementById('frequency');
+    const weeksInput = document.getElementById('weeks');
+    const savingsEl = document.getElementById('savings');
+    const timeNoteEl = document.getElementById('time-note');
+
+    function parseNonNegative(input) {
+      const value = Number(input.value);
+      if (Number.isNaN(value) || value < 0) return 0;
+      return value;
+    }
+
+    function calculate() {
+      const rate = parseNonNegative(rateInput);
+      const mins = parseNonNegative(minsInput);
+      const freq = parseNonNegative(freqInput);
+      const weeks = parseNonNegative(weeksInput);
+
+      const totalHoursYear = (mins * freq * weeks) / 60;
+      const totalSavingsYear = totalHoursYear * rate;
+
+      if (totalSavingsYear <= 0) {
+        savingsEl.innerText = 'Bitte Werte eingeben';
+      } else {
+        savingsEl.innerText = new Intl.NumberFormat('de-DE', {
+          style: 'currency',
+          currency: 'EUR'
+        }).format(totalSavingsYear);
+      }
+
+      const roundedHours = Math.round(totalHoursYear);
+      timeNoteEl.innerHTML =
+        `Das sind <b>${roundedHours} Stunden</b>, die du für wichtigere Themen wie Vertrieb, Strategie oder Kunden nutzen könntest.`;
+    }
+
+    function openContact() {
+      // Hier dein LinkedIn-Profil oder Mailto einsetzen
+      window.open('https://www.linkedin.com/in/sueleyman-guemues/', '_blank');
+      // oder: window.location.href = 'mailto:deine-mail@example.com?subject=Prozessanalyse';
+    }
+
+    rateInput.addEventListener('input', calculate);
+    minsInput.addEventListener('input', calculate);
+    freqInput.addEventListener('input', calculate);
+    weeksInput.addEventListener('input', calculate);
+
+    calculate();
+  </script>
+</body>
+</html>

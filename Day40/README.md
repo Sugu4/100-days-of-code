@@ -1,6 +1,6 @@
 # Zeit- & Kostenrechner für Routineaufgaben
 
-Ein einfacher, interaktiver Rechner, mit dem du abschätzen kannst, wie viel Zeit und Geld jedes Jahr in wiederkehrenden Aufgaben verschwindet. Ideal, um Automatisierungspotenziale in Prozessen sichtbar zu machen.[web:59][web:65]
+Ein einfacher, interaktiver Rechner, mit dem du abschätzen kannst, wie viel Zeit und Geld jedes Jahr in wiederkehrenden Aufgaben verschwindet. Ideal, um Automatisierungspotenziale in Prozessen sichtbar zu machen.
 
 ---
 
@@ -47,7 +47,7 @@ Beispiel:
 
 - 105 Stunden × 50 € = 5.250 € pro Jahr  
 
-Diese Kosten sind der „Zeitverlust“ für genau diese eine Aufgabe. Sie orientieren sich am Konzept „Time Cost“: verlorene Zeit × Stundensatz der Ressource.[web:59]
+Diese Kosten sind der „Zeitverlust“ für genau diese eine Aufgabe. Sie orientieren sich am Konzept „Time Cost“: verlorene Zeit × Stundensatz der Ressource.
 
 ---
 
@@ -77,7 +77,7 @@ Wenn du diese Aufgabe z.B. teilweise automatisierst oder reduzierst, kannst du e
 4. Nutze das Ergebnis, um besser zu argumentieren:
    - gegenüber Geschäftsführung  
    - in eigenen Projekten  
-   - oder in Gesprächen über Prozessautomatisierung / Digitalisierung.[web:57][web:60]
+   - oder in Gesprächen über Prozessautomatisierung / Digitalisierung.
 
 👉https://sugu4.github.io/100-days-of-code/Day40/
 
@@ -95,7 +95,7 @@ Wenn du diese Aufgabe z.B. teilweise automatisierst oder reduzierst, kannst du e
 ## Hinweise
 
 - Es handelt sich um eine grobe Schätzung, kein Finanz- oder Steuer-Tool.  
-- Gemeinkosten, Opportunitätskosten oder komplexere ROI-Berechnungen werden bewusst nicht berücksichtigt, damit das Tool schnell und verständlich bleibt.[web:59][web:55][web:66]
+- Gemeinkosten, Opportunitätskosten oder komplexere ROI-Berechnungen werden bewusst nicht berücksichtigt, damit das Tool schnell und verständlich bleibt.
 
 ---
 

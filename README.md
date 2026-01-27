@@ -61,6 +61,7 @@ Viel Spaß beim Stöbern und Lernen! 😊
 |  37 | Ur-Anker: Die App zur Kohärenz und zum Urvertrauen | [Day37](./Day37/Ur-Anker) |
 |  38 | Todo-App mit Unteraufgaben | [Day38](./Day38/) |
 |  39 | Birthday Hearts - kleine Überraschung im Browser | [Day39](./Day39/) |
+|  40 | Zeit- & Kostenrechner für Routineaufgaben | [Day40](./Day40/) |
 
 
 ---
@@ -82,6 +83,7 @@ Dieses Projekt richtet sich an:
 - Python und API -Projekte nach Tag 30 geplant
 - Erste Schritte mit Datenanalyse & Automatisierung
 - Fullstack-Webentwickler mit Fokus auf Python & FastAPI
+- Produkt- und Operations-Mini-Projekte
 
 ---
 

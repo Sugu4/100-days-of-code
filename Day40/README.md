@@ -28,11 +28,11 @@ Der Rechner berechnet daraus:
 \text{Stunden pro Jahr} = \frac{\text{Minuten pro Vorgang} \times \text{Häufigkeit pro Woche} \times \text{Wochen pro Jahr}}{60}
 \]
 
-- Minuten pro Vorgang: z.B. 30  
-- Häufigkeit pro Woche: z.B. 5  
-- Wochen pro Jahr: z.B. 42  
-
 Beispiel:
+
+- Minuten pro Vorgang: 30  
+- Häufigkeit pro Woche: 5  
+- Wochen pro Jahr: 42  
 
 - 30 Minuten × 5 × 42 = 6300 Minuten  
 - 6300 ÷ 60 = 105 Stunden pro Jahr  
@@ -62,8 +62,8 @@ Angenommen:
 
 Dann zeigt dir der Rechner:
 
-- ca. 105 Stunden pro Jahr  
-- ca. 5.250 € pro Jahr, die in diese eine Tätigkeit fließen  
+- 105 Stunden pro Jahr  
+- 5.250 € pro Jahr, die in diese eine Tätigkeit fließen  
 
 Wenn du diese Aufgabe z.B. teilweise automatisierst oder reduzierst, kannst du einen Teil dieser Zeit und Kosten zurückgewinnen.
 

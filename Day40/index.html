@@ -14,9 +14,6 @@
 
   <link rel="icon" type="image/x-icon" href="assets/StoppUhr.png">
 
-  <!-- Schrift -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-
   <style>
     :root {
       --primary: #0FAA94;
@@ -24,6 +21,12 @@
       --bg-gradient: linear-gradient(135deg, #0FAA94 0%, #2c65d8 100%);
       --card-bg: #ffffff;
       --text-main: #305173;
+      --font-Montse: "Montserrat", sans-serif;
+    }
+
+    @font-face{
+    font-family: "Montserrat";
+    src: url(assets/Montserrat/Montserrat-VariableFont_wght.ttf) format("opentype");
     }
 
     * {
@@ -31,7 +34,7 @@
     }
 
     body {
-      font-family: 'Montserrat', sans-serif;
+      font-family: var(--font-Montse);
       background: var(--bg-gradient);
       min-height: 100vh;
       margin: 0;
@@ -286,7 +289,7 @@
 
       <div class="input-group full-width">
         <label for="weeks">Arbeitswochen pro Jahr</label>
-        <input type="number" id="weeks" value="42" min="0" max="52" step="1">
+        <input type="number" id="weeks" value="42" min="1" max="52" step="1">
       </div>
     </div>
 
@@ -328,7 +331,17 @@
       const rate = parseNonNegative(rateInput);
       const mins = parseNonNegative(minsInput);
       const freq = parseNonNegative(freqInput);
-      const weeks = parseNonNegative(weeksInput);
+      let weeks = parseNonNegative(weeksInput);
+
+      if (weeks < 1 && weeksInput.value !== "") {
+        weeks = 1;
+        weeksInput.value = 1;
+      }
+
+      if (weeks > 52) {
+        weeks = 52;
+        weeksInput.value = 52;
+      }
 
       const totalHoursYear = (mins * freq * weeks) / 60;
       const totalSavingsYear = totalHoursYear * rate;

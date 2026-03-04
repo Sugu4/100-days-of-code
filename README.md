@@ -2,7 +2,7 @@
 
 **Ziel:** Jeden Tag coden, lernen, dokumentieren und praxisnahe Mini-Projekte entwickeln.
 
-Dieses Repository dokumentiert meine persönliche **100-Tage-Coding-Challenge** – mit **HTML, CSS, JavaScript, Python, FastAPI (Backend/Frontend-Anbindung)** und **GitHub Pages**.  
+Dieses Repository dokumentiert meine persönliche **100-Tage-Coding-Challenge** mit, **HTML, CSS, JavaScript, Python, FastAPI (Backend/Frontend-Anbindung)** und **GitHub Pages**.  
 Zur Unterstützung nutze ich KI-Tools, um schneller zu lernen. Dabei ist es mir wichtig, den Code wirklich zu verstehen und Schritt für Schritt eigene Ideen umzusetzen.  
 
 Jeder Tag enthält ein kleines, aber lehrreiches Projekt, das online getestet werden kann und gleichzeitig als Lernvorlage dient.  
@@ -84,13 +84,14 @@ Dieses Projekt richtet sich an:
 - Erste Schritte mit Datenanalyse & Automatisierung
 - Fullstack-Webentwickler mit Fokus auf Python & FastAPI
 - Produkt- und Operations-Mini-Projekte
+- Spezialisierte Hilfstools
 
 ---
 
 ## Feedback oder Fragen?
 
-Gerne als GitHub-Issue oder über das Kontaktformular auf meiner Website:  
-👉 [https://sugu4.github.io/guemues/](https://sugu4.github.io/guemues/)
+Gerne als GitHub-Issue oder über das Kontaktformular auf meinem Portfolio:  
+👉 [https://sugu4.github.io/GuemuesPortfolio/](Projekte entdecken)
 
 ---
 

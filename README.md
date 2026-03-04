@@ -14,7 +14,7 @@ Viel Spaß beim Stöbern und Lernen! 😊
 ## Live-Demo
 
 👉 **Alle Projekte direkt im Browser ansehen:**  
-**https://sugu4.github.io/100-days-of-code/**
+**[Projekte ansehen](https://sugu4.github.io/100-days-of-code/)**
 
 ---
 

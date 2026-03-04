@@ -91,7 +91,7 @@ Dieses Projekt richtet sich an:
 ## Feedback oder Fragen?
 
 Gerne als GitHub-Issue oder über das Kontaktformular auf meinem Portfolio:  
-👉 **[Meine Projekte entdecken](https://sugu4.github.io/GuemuesPortfolio/#projects)**
+👉 **[Zum Portfolio](https://sugu4.github.io/GuemuesPortfolio/)**
 
 ---
 
